@@ -1,8 +1,10 @@
 // pages/index.tsx
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 import '../styles/globals.css'
 import { FC } from 'react';
+import Navbar from './components/Navbar';
 
 interface ServiceProps {
   title: string;
@@ -71,61 +73,169 @@ const Home: FC = () => {
   return (
     <div className="min-h-screen bg-cream-50">
       <Head>
-        <title>Litzor | Marketing That Brings You More Business.</title>
-        <meta name="description" content="Litzor helps local service businesses grow with done-for-you marketing powered by AI. Simple, fast, and effective." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="GetLitzor.com | Smart Marketing for Local Businesses" />
-        <meta property="og:description" content="Cutting-edge marketing for 2025" />
-        <meta property="og:image" content="https://getlitzor.com/og-image.jpg" />
-        <meta property="og:url" content="https://getlitzor.com" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://getlitzor.com" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow" />
+        <meta name="author" content="Litzor" />
+        <meta name="keywords" content="AI marketing, digital marketing, local business marketing, SEO, social media marketing, content marketing, conversion optimization, marketing automation" />
+        <link rel="canonical" href="https://www.getlitzor.com" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/logo.png" />
+        
+        {/* Enhanced Structured Data */}
         <script type="application/ld+json">
           {`
             {
               "@context": "https://schema.org",
-              "@type": "Organization",
+              "@type": "LocalBusiness",
               "name": "Litzor",
-              "url": "https://getlitzor.com",
-              "logo": "https://getlitzor.com/logo.png"
+              "description": "AI-powered marketing services for local businesses",
+              "url": "https://www.getlitzor.com",
+              "logo": "https://www.getlitzor.com/logo.png",
+              "image": "https://www.getlitzor.com/og-image.jpg",
+              "telephone": "+1-XXX-XXX-XXXX",
+              "email": "hello@getlitzor.com",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Your City",
+                "addressRegion": "Your State",
+                "addressCountry": "US"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "YOUR_LATITUDE",
+                "longitude": "YOUR_LONGITUDE"
+              },
+              "openingHours": "Mo-Fr 09:00-17:00",
+              "priceRange": "$$",
+              "serviceArea": {
+                "@type": "GeoCircle",
+                "geoMidpoint": {
+                  "@type": "GeoCoordinates",
+                  "latitude": "YOUR_LATITUDE",
+                  "longitude": "YOUR_LONGITUDE"
+                },
+                "geoRadius": "50000"
+              },
+              "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Marketing Services",
+                "itemListElement": [
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "AI-Powered Marketing",
+                      "description": "Leverage AI technologies to optimize campaigns and target the right audience"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Content Strategy",
+                      "description": "Develop engaging content that resonates with your audience"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Social Media Management",
+                      "description": "Build brand presence across platforms with strategic content"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "SEO Optimization",
+                      "description": "Improve search rankings with advanced SEO techniques"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Analytics & Insights",
+                      "description": "Make data-driven decisions with comprehensive analytics"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Conversion Optimization",
+                      "description": "Transform visitors into customers with proven strategies"
+                    }
+                  }
+                ]
+              },
+              "sameAs": [
+                "https://www.linkedin.com/company/litzor",
+                "https://www.facebook.com/litzor",
+                "https://twitter.com/litzor"
+              ]
+            }
+          `}
+        </script>
+
+        {/* Breadcrumb Schema */}
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://www.getlitzor.com"
+                }
+              ]
+            }
+          `}
+        </script>
+
+        {/* FAQ Schema */}
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "What marketing services does Litzor offer?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Litzor offers AI-powered marketing, content strategy, social media management, SEO optimization, analytics, and conversion optimization services."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How does Litzor help local businesses?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We create simple, smart marketing that brings in customers so you can focus on running your business. Our AI-powered approach delivers results without the complexity."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What makes Litzor different from other marketing agencies?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Litzor combines cutting-edge AI technology with creative strategies to deliver exceptional results. We focus on simplicity, effectiveness, and measurable outcomes."
+                  }
+                }
+              ]
             }
           `}
         </script>
       </Head>
 
-      <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-200">
-  <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-    <div className="flex items-center gap-3">
-      <Image src="/logo.png" alt="Litzor Logo" width={72} height={72} />
-    </div>
-
-    <nav className="hidden md:flex gap-6">
-      {['Services', 'About', 'Testimonials', 'Contact'].map((item) => (
-        <a
-          key={item}
-          href={`#${item.toLowerCase()}`}
-          className="text-xl font-medium text-gray-700 hover:text-red-500 transition-colors"
-        >
-          {item}
-        </a>
-      ))}
-    </nav>
-
-    <button className="md:hidden inline-flex items-center justify-center text-gray-700 hover:text-red-500">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="h-6 w-6"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
-    </button>
-  </div>
-</header>
+      <Navbar />
 
 
       <main>
@@ -379,9 +489,9 @@ const Home: FC = () => {
             <p className="text-gray-400">© 2025 Litzor. All rights reserved.</p>
             <div className="mt-4 md:mt-0">
               <ul className="flex space-x-6">
-                <li><a href="#" className="text-gray-400 hover:text-red-500 transition">Privacy Policy</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-red-500 transition">Terms of Service</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-red-500 transition">Cookie Policy</a></li>
+                <li><a href="/privacy" className="text-gray-400 hover:text-red-500 transition">Privacy Policy</a></li>
+                <li><a href="/terms" className="text-gray-400 hover:text-red-500 transition">Terms of Service</a></li>
+                <li><a href="/cookies" className="text-gray-400 hover:text-red-500 transition">Cookie Policy</a></li>
               </ul>
             </div>
           </div>
