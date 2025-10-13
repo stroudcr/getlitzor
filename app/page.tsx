@@ -26,9 +26,9 @@ const Home: FC = () => {
       icon: "⚡"
     },
     {
-      title: "Content Strategy",
-      description: "Develop engaging content that resonates with your audience and drives conversions.",
-      icon: "📝"
+      title: "Website Design & Development",
+      description: "Build beautiful, high-performing websites that convert visitors into customers and grow your business.",
+      icon: "💻"
     },
     {
       title: "Social Media Management",
@@ -77,7 +77,7 @@ const Home: FC = () => {
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow" />
         <meta name="author" content="Litzor" />
-        <meta name="keywords" content="AI marketing, digital marketing, local business marketing, SEO, social media marketing, content marketing, conversion optimization, marketing automation" />
+        <meta name="keywords" content="AI marketing, digital marketing, local business marketing, SEO, social media marketing, website design, web development, conversion optimization, marketing automation" />
         <link rel="canonical" href="https://www.getlitzor.com" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/logo.png" />
@@ -133,8 +133,8 @@ const Home: FC = () => {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "Content Strategy",
-                      "description": "Develop engaging content that resonates with your audience"
+                      "name": "Website Design & Development",
+                      "description": "Build beautiful, high-performing websites that convert visitors into customers"
                     }
                   },
                   {
@@ -210,7 +210,7 @@ const Home: FC = () => {
                   "name": "What marketing services does Litzor offer?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Litzor offers AI-powered marketing, content strategy, social media management, SEO optimization, analytics, and conversion optimization services."
+                    "text": "Litzor offers AI-powered marketing, website design & development, social media management, SEO optimization, analytics, and conversion optimization services."
                   }
                 },
                 {
@@ -479,7 +479,7 @@ const Home: FC = () => {
               <h4 className="text-lg font-bold mb-4">Services</h4>
               <ul className="space-y-2">
                 <li><a href="#" className="text-gray-400 hover:text-red-500 transition">AI Marketing</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-red-500 transition">Content Strategy</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-red-500 transition">Website Design</a></li>
                 <li><a href="#" className="text-gray-400 hover:text-red-500 transition">Social Media</a></li>
                 <li><a href="#" className="text-gray-400 hover:text-red-500 transition">SEO Optimization</a></li>
               </ul>
