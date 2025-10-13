@@ -282,7 +282,7 @@ const Home: FC = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-gray-900 dark:text-gray-100 mb-8 leading-tight">
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-gray-950 mb-8 leading-tight drop-shadow-sm">
           Marketing That Brings You More Business.<span className="gradient-text"> Litzor</span>
         </h1>
       </motion.div>
@@ -291,7 +291,7 @@ const Home: FC = () => {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
-        className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 mb-12 max-w-3xl leading-relaxed"
+        className="text-xl md:text-2xl text-gray-800 mb-12 max-w-3xl leading-relaxed drop-shadow-sm"
       >
         We create simple, smart marketing that brings in customers—so you can focus on running your business. No stress. No buzzwords. Just results.
       </motion.p>
@@ -358,10 +358,10 @@ const Home: FC = () => {
               transition={{ duration: 0.6 }}
               className="text-center mb-20"
             >
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-950 mb-6">
                 What We Do for Your Business
               </h2>
-              <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
                 Everything you need to get more customers—without doing it all yourself.
               </p>
             </motion.div>
@@ -386,11 +386,11 @@ const Home: FC = () => {
                       {service.icon}
                     </div>
 
-                    <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-red-600 transition-colors duration-300">
+                    <h3 className="text-2xl font-bold text-gray-950 mb-4 group-hover:text-red-600 transition-colors duration-300">
                       {service.title}
                     </h3>
 
-                    <p className="text-gray-600 leading-relaxed">
+                    <p className="text-gray-700 leading-relaxed">
                       {service.description}
                     </p>
 
@@ -418,10 +418,10 @@ const Home: FC = () => {
               transition={{ duration: 0.6 }}
               className="text-center mb-20"
             >
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-950 mb-6 drop-shadow-sm">
                 Our Work
               </h2>
-              <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-xl md:text-2xl text-gray-800 max-w-3xl mx-auto leading-relaxed drop-shadow-sm">
                 Real websites we've built for real businesses—designed to get results.
               </p>
             </motion.div>
@@ -470,7 +470,7 @@ const Home: FC = () => {
 
                       {/* Title with slide-up animation */}
                       <div className="p-6 bg-white">
-                        <h3 className="text-2xl font-bold text-gray-900 group-hover:text-red-600 transition-colors duration-300">
+                        <h3 className="text-2xl font-bold text-gray-950 group-hover:text-red-600 transition-colors duration-300">
                           {item.title}
                         </h3>
                         <div className="mt-3 flex items-center text-red-500 font-semibold text-sm">
@@ -545,15 +545,15 @@ const Home: FC = () => {
                 transition={{ duration: 0.7 }}
                 className="lg:w-1/2"
               >
-                <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-8">
+                <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-950 mb-8">
                   About <span className="gradient-text">Litzor</span>
                 </h2>
 
-                <p className="text-xl text-gray-700 mb-6 leading-relaxed">
+                <p className="text-xl text-gray-800 mb-6 leading-relaxed">
                   We started Litzor to help small businesses stay competitive in a digital world that keeps changing. Our tools are smart, but our mission is simple: help good businesses grow.
                 </p>
 
-                <p className="text-xl text-gray-700 mb-10 leading-relaxed">
+                <p className="text-xl text-gray-800 mb-10 leading-relaxed">
                   We combine cutting-edge technology with creative strategies to deliver exceptional results for our clients. Our team is passionate about helping businesses thrive in the ever-evolving digital landscape.
                 </p>
 
@@ -604,10 +604,10 @@ const Home: FC = () => {
               transition={{ duration: 0.6 }}
               className="text-center mb-20"
             >
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-950 mb-6">
                 What People Are Saying
               </h2>
-              <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
                 Here's what business owners are saying about the kind of work we aim to deliver.
               </p>
             </motion.div>
@@ -644,7 +644,7 @@ const Home: FC = () => {
                       </div>
 
                       {/* Testimonial text */}
-                      <p className="text-gray-700 text-lg mb-6 flex-grow leading-relaxed italic">
+                      <p className="text-gray-800 text-lg mb-6 flex-grow leading-relaxed italic">
                         {testimonial.quote}
                       </p>
 
@@ -656,8 +656,8 @@ const Home: FC = () => {
                         </div>
 
                         <div>
-                          <p className="font-bold text-gray-900 text-lg">{testimonial.author}</p>
-                          <p className="text-gray-600 text-sm">{testimonial.company}</p>
+                          <p className="font-bold text-gray-950 text-lg">{testimonial.author}</p>
+                          <p className="text-gray-700 text-sm">{testimonial.company}</p>
                         </div>
                       </div>
 
@@ -767,10 +767,10 @@ const Home: FC = () => {
                 transition={{ duration: 0.6 }}
                 className="text-center mb-16"
               >
-                <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+                <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-950 mb-6 drop-shadow-sm">
                   Contact Us
                 </h2>
-                <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                <p className="text-xl md:text-2xl text-gray-800 max-w-3xl mx-auto leading-relaxed drop-shadow-sm">
                   Have questions or ready to start? Reach out to our team.
                 </p>
               </motion.div>

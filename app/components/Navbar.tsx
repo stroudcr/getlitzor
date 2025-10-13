@@ -2,7 +2,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -97,14 +96,10 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Navigation */}
-        <motion.div
-          initial={false}
-          animate={{
-            height: mobileMenuOpen ? 'auto' : 0,
-            opacity: mobileMenuOpen ? 1 : 0
-          }}
-          transition={{ duration: 0.3, ease: 'easeInOut' }}
-          className="lg:hidden overflow-hidden"
+        <div
+          className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+            mobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+          }`}
           id="mobile-menu"
         >
           <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-100 rounded-lg">
@@ -115,24 +110,17 @@ export default function Navbar() {
               { name: 'Testimonials', href: '/#testimonials' },
               { name: 'Contact', href: '/#contact' }
             ].map((item, index) => (
-              <motion.a
+              <a
                 key={item.name}
                 href={item.href}
                 onClick={() => setMobileMenuOpen(false)}
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: mobileMenuOpen ? 1 : 0, x: mobileMenuOpen ? 0 : -20 }}
-                transition={{ duration: 0.2, delay: index * 0.05 }}
-                className="block px-3 py-3 text-base font-medium text-gray-700 hover:text-red-500 hover:bg-red-50 rounded-xl transition-colors duration-200"
+                className="block px-3 py-3 text-base font-medium text-gray-700 hover:text-red-500 hover:bg-red-50 rounded-xl transition-all duration-200 animate-slide-up"
+                style={{ animationDelay: `${index * 50}ms` }}
               >
                 {item.name}
-              </motion.a>
+              </a>
             ))}
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: mobileMenuOpen ? 1 : 0, x: mobileMenuOpen ? 0 : -20 }}
-              transition={{ duration: 0.2, delay: 0.25 }}
-              className="pt-4 pb-3 border-t border-gray-100"
-            >
+            <div className="pt-4 pb-3 border-t border-gray-100">
               <a
                 href="/#contact"
                 onClick={() => setMobileMenuOpen(false)}
@@ -140,9 +128,9 @@ export default function Navbar() {
               >
                 Get Started
               </a>
-            </motion.div>
+            </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </header>
   );
