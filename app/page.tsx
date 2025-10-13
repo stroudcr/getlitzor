@@ -61,7 +61,7 @@ const Home: FC = () => {
   const portfolioItems: PortfolioProps[] = [
     {
       title: "PlayInDirtJobs",
-      image: "/work/roofing-site.jpg",
+      image: "/PIDJ.jpg",
       link: "https://www.playindirtjobs.com"
     },
     {
@@ -71,7 +71,7 @@ const Home: FC = () => {
     },
     {
       title: "WellDiem",
-      image: "/work/hvac-site.jpg",
+      image: "/WD.PNG",
       link: "https://www.welldiem.com"
     }
   ];
