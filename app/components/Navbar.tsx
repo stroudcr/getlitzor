@@ -25,6 +25,7 @@ export default function Navbar() {
           <nav className="hidden lg:flex items-center space-x-1">
             {[
               { name: 'Services', href: '/#services' },
+              { name: 'Our Work', href: '/#work' },
               { name: 'About', href: '/#about' },
               { name: 'Testimonials', href: '/#testimonials' },
               { name: 'Contact', href: '/#contact' }
@@ -74,6 +75,7 @@ export default function Navbar() {
           <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-100 mt-4 rounded-lg shadow-lg">
             {[
               { name: 'Services', href: '/#services' },
+              { name: 'Our Work', href: '/#work' },
               { name: 'About', href: '/#about' },
               { name: 'Testimonials', href: '/#testimonials' },
               { name: 'Contact', href: '/#contact' }

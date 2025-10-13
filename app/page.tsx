@@ -18,6 +18,12 @@ interface TestimonialProps {
   company: string;
 }
 
+interface PortfolioProps {
+  title: string;
+  image: string;
+  link: string;
+}
+
 const Home: FC = () => {
   const services: ServiceProps[] = [
     {
@@ -49,6 +55,24 @@ const Home: FC = () => {
       title: "Conversion Optimization",
       description: "Transform visitors into customers with our proven conversion strategies.",
       icon: "🎯"
+    }
+  ];
+
+  const portfolioItems: PortfolioProps[] = [
+    {
+      title: "PlayInDirtJobs",
+      image: "/work/roofing-site.jpg",
+      link: "https://www.playindirtjobs.com"
+    },
+    {
+      title: "Rapidfire Rachel",
+      image: "/RFR.jpg",
+      link: "https://www.rapidfirerachel.com"
+    },
+    {
+      title: "WellDiem",
+      image: "/work/hvac-site.jpg",
+      link: "https://www.welldiem.com"
     }
   ];
 
@@ -283,8 +307,40 @@ const Home: FC = () => {
           </div>
         </section>
 
+        {/* Our Work Section */}
+        <section id="work" className="py-20 bg-cream-50">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Work</h2>
+              <p className="text-xl text-gray-700 max-w-2xl mx-auto">
+                Real websites we've built for real businesses—designed to get results.
+              </p>
+            </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {portfolioItems.map((item, index) => (
+                <div key={index} className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                  <a href={item.link} target="_blank" rel="noopener noreferrer" className="block">
+                    <div className="relative h-64 bg-gray-200 cursor-pointer">
+                      <Image
+                        src={item.image}
+                        alt={item.title}
+                        layout="fill"
+                        objectFit="cover"
+                        className="w-full h-full transition-transform duration-300 hover:scale-105"
+                      />
+                    </div>
+                  </a>
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold text-gray-900">{item.title}</h3>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* About Section */}
-        <section id="about" className="py-20 bg-cream-50">
+        <section id="about" className="py-20 bg-white">
           <div className="container mx-auto px-4">
             <div className="flex flex-col lg:flex-row items-center gap-12">
               <div className="lg:w-1/2">
@@ -470,6 +526,7 @@ const Home: FC = () => {
               <h4 className="text-lg font-bold mb-4">Quick Links</h4>
               <ul className="space-y-2">
                 <li><a href="#services" className="text-gray-400 hover:text-red-500 transition">Services</a></li>
+                <li><a href="#work" className="text-gray-400 hover:text-red-500 transition">Our Work</a></li>
                 <li><a href="#about" className="text-gray-400 hover:text-red-500 transition">About</a></li>
                 <li><a href="#testimonials" className="text-gray-400 hover:text-red-500 transition">Testimonials</a></li>
                 <li><a href="#contact" className="text-gray-400 hover:text-red-500 transition">Contact</a></li>
