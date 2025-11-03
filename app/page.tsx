@@ -506,7 +506,7 @@ const Home: FC = () => {
                 <div className="relative">
                   {/* Main image with gradient border */}
                   <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-                    <div className="w-full h-[500px] bg-gradient-to-br from-red-500 to-orange-500 p-1">
+                    <div className="w-full h-[300px] sm:h-[400px] md:h-[450px] lg:h-[500px] bg-gradient-to-br from-red-500 to-orange-500 p-1">
                       <div className="w-full h-full rounded-3xl overflow-hidden">
                         <Image
                           src="/about-image.jpg"
