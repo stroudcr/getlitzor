@@ -78,7 +78,7 @@ const Home: FC = () => {
     },
     {
       title: "Work In Data Center",
-      image: "/PIDJ.jpg",
+      image: "/WIDC.jpg",
       link: "https://www.workindatacenter.com"
     }
   ];
@@ -423,10 +423,10 @@ const Home: FC = () => {
               transition={{ duration: 0.6 }}
               className="text-center mb-20"
             >
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-950 mb-6 drop-shadow-sm">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 drop-shadow-sm" style={{ color: '#ef4444' }}>
                 Our Work
               </h2>
-              <p className="text-xl md:text-2xl text-gray-800 max-w-3xl mx-auto leading-relaxed drop-shadow-sm">
+              <p className="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed drop-shadow-sm" style={{ color: '#f97316' }}>
                 Real websites we've built for real businesses—designed to get results.
               </p>
             </motion.div>
@@ -455,12 +455,6 @@ const Home: FC = () => {
 
                         {/* Gradient overlay on hover */}
                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-
-                        {/* Live badge */}
-                        <div className="absolute top-4 right-4 bg-green-500 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg flex items-center gap-1.5">
-                          <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
-                          LIVE
-                        </div>
 
                         {/* View Project button reveal */}
                         <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
