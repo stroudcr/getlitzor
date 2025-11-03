@@ -75,6 +75,11 @@ const Home: FC = () => {
       title: "WellDiem",
       image: "/WD.PNG",
       link: "https://www.welldiem.com"
+    },
+    {
+      title: "Work In Data Center",
+      image: "/PIDJ.jpg",
+      link: "https://www.workindatacenter.com"
     }
   ];
 
