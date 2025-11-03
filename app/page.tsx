@@ -501,7 +501,7 @@ const Home: FC = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.7 }}
-                className="lg:w-1/2"
+                className="hidden lg:block lg:w-1/2"
               >
                 <div className="relative">
                   {/* Main image with gradient border */}
