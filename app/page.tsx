@@ -29,9 +29,9 @@ interface PortfolioProps {
 const Home: FC = () => {
   const services: ServiceProps[] = [
     {
-      title: "AI-Powered Marketing",
-      description: "Leverage the latest AI technologies to optimize your campaigns and target the right audience.",
-      icon: "⚡"
+      title: "Lead Generation",
+      description: "Attract and capture qualified leads with proven funnels and landing pages that convert.",
+      icon: "🧲"
     },
     {
       title: "Website Design & Development",
@@ -39,9 +39,9 @@ const Home: FC = () => {
       icon: "💻"
     },
     {
-      title: "Social Media Management",
-      description: "Build your brand presence across platforms with strategic content and community engagement.",
-      icon: "🌐"
+      title: "AI Automation & Workflows",
+      description: "Streamline your business operations with custom AI-powered automation that saves time and reduces errors.",
+      icon: "🤖"
     },
     {
       title: "SEO Optimization",
@@ -765,10 +765,10 @@ const Home: FC = () => {
                 transition={{ duration: 0.6 }}
                 className="text-center mb-16"
               >
-                <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-950 mb-6 drop-shadow-sm">
+                <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 drop-shadow-sm" style={{ color: '#ef4444' }}>
                   Contact Us
                 </h2>
-                <p className="text-xl md:text-2xl text-gray-800 max-w-3xl mx-auto leading-relaxed drop-shadow-sm">
+                <p className="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed drop-shadow-sm" style={{ color: '#f97316' }}>
                   Have questions or ready to start? Reach out to our team.
                 </p>
               </motion.div>
@@ -948,9 +948,9 @@ const Home: FC = () => {
             <div>
               <h4 className="text-lg font-bold mb-4">Services</h4>
               <ul className="space-y-2">
-                <li><a href="#" className="text-gray-400 hover:text-red-500 transition">AI Marketing</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-red-500 transition">Lead Generation</a></li>
                 <li><a href="#" className="text-gray-400 hover:text-red-500 transition">Website Design</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-red-500 transition">Social Media</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-red-500 transition">AI Automation</a></li>
                 <li><a href="#" className="text-gray-400 hover:text-red-500 transition">SEO Optimization</a></li>
               </ul>
             </div>
