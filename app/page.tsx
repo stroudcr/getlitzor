@@ -948,7 +948,7 @@ const Home: FC = () => {
             <div>
               <h4 className="text-lg font-bold mb-4">Services</h4>
               <ul className="space-y-2">
-                <li><a href="#" className="text-gray-400 hover:text-red-500 transition">Lead Generation</a></li>
+                <li><a href="/services/lead-generation" className="text-gray-400 hover:text-red-500 transition">Lead Generation</a></li>
                 <li><a href="#" className="text-gray-400 hover:text-red-500 transition">Website Design</a></li>
                 <li><a href="#" className="text-gray-400 hover:text-red-500 transition">AI Automation</a></li>
                 <li><a href="#" className="text-gray-400 hover:text-red-500 transition">SEO Optimization</a></li>
