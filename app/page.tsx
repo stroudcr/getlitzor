@@ -452,7 +452,7 @@ const Home: FC = () => {
                   <a href={item.link} target="_blank" rel="noopener noreferrer" className="block">
                     <div className="relative bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500">
                       {/* Image container with overlay */}
-                      <div className="relative h-80 bg-gradient-to-br from-gray-100 to-gray-200 overflow-hidden">
+                      <div className="relative aspect-square bg-gradient-to-br from-gray-100 to-gray-200 overflow-hidden">
                         <Image
                           src={item.image}
                           alt={item.title}
@@ -466,9 +466,9 @@ const Home: FC = () => {
 
                         {/* View Project button reveal */}
                         <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
-                          <div className="px-8 py-4 bg-white text-gray-900 font-bold rounded-xl shadow-2xl flex items-center gap-2 hover:bg-red-500 hover:text-white transition-colors duration-300">
+                          <div className="px-4 py-2 md:px-8 md:py-4 bg-white text-gray-900 font-bold rounded-xl shadow-2xl flex items-center gap-2 hover:bg-red-500 hover:text-white transition-colors duration-300 text-sm md:text-base">
                             View Project
-                            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg className="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                             </svg>
                           </div>
@@ -476,13 +476,13 @@ const Home: FC = () => {
                       </div>
 
                       {/* Title with slide-up animation */}
-                      <div className="p-6 bg-white">
-                        <h3 className="text-2xl font-bold text-gray-950 group-hover:text-red-600 transition-colors duration-300">
+                      <div className="p-3 md:p-6 bg-white">
+                        <h3 className="text-base md:text-2xl font-bold text-gray-950 group-hover:text-red-600 transition-colors duration-300">
                           {item.title}
                         </h3>
-                        <div className="mt-3 flex items-center text-red-500 font-semibold text-sm">
+                        <div className="mt-2 md:mt-3 flex items-center text-red-500 font-semibold text-xs md:text-sm">
                           <span>Visit Site</span>
-                          <svg className="w-4 h-4 ml-2 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <svg className="w-3 h-3 md:w-4 md:h-4 ml-1 md:ml-2 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                           </svg>
                         </div>
