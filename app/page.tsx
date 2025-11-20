@@ -950,7 +950,7 @@ const Home: FC = () => {
               <ul className="space-y-2">
                 <li><a href="/services/lead-generation" className="text-gray-400 hover:text-red-500 transition">Lead Generation</a></li>
                 <li><a href="/services/website-design" className="text-gray-400 hover:text-red-500 transition">Website Design</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-red-500 transition">AI Automation</a></li>
+                <li><a href="/services/ai-automation" className="text-gray-400 hover:text-red-500 transition">AI Automation</a></li>
                 <li><a href="#" className="text-gray-400 hover:text-red-500 transition">SEO Optimization</a></li>
               </ul>
             </div>

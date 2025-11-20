@@ -18,92 +18,92 @@ interface FAQProps {
   answer: string;
 }
 
-const WebsiteDesignPage: FC = () => {
+const AIAutomationPage: FC = () => {
   const features: FeatureProps[] = [
     {
-      title: "Custom Website Design",
-      description: "Unique, branded designs tailored to your business—not cookie-cutter templates. Every element is crafted to reflect your identity and appeal to your target customers.",
-      icon: "🎨"
+      title: "Customer Communication",
+      description: "Automate responses to inquiries, follow-ups, and appointment confirmations. Keep customers engaged without lifting a finger.",
+      icon: "💬"
     },
     {
-      title: "Responsive Development",
-      description: "Your website looks and works perfectly on every device—phones, tablets, and desktops. Mobile-first development ensures the best experience for all visitors.",
-      icon: "📱"
+      title: "Data Entry & Processing",
+      description: "Eliminate manual data entry with intelligent systems that capture, validate, and organize information automatically.",
+      icon: "📊"
     },
     {
-      title: "Speed & Performance",
-      description: "Lightning-fast load times that keep visitors engaged and improve your search rankings. We optimize every image, script, and asset for maximum performance.",
-      icon: "⚡"
+      title: "Appointment Scheduling",
+      description: "Let AI handle booking, rescheduling, and reminders. Reduce no-shows and free up your team's time.",
+      icon: "📅"
     },
     {
-      title: "SEO-Ready Foundation",
-      description: "Built with search engines in mind from day one. Proper structure, meta tags, schema markup, and technical SEO best practices are baked into every site.",
-      icon: "🔍"
+      title: "Reporting & Analytics",
+      description: "Get automated reports delivered to your inbox. Track KPIs and make data-driven decisions without spreadsheet headaches.",
+      icon: "📈"
     }
   ];
 
   const processSteps = [
     {
       step: "1",
-      title: "Discover",
-      description: "We learn about your business, goals, competitors, and target audience to create a strategic plan."
+      title: "Analyze",
+      description: "We audit your current workflows to identify repetitive tasks and automation opportunities."
     },
     {
       step: "2",
       title: "Design",
-      description: "Custom mockups and wireframes bring your vision to life with revisions until it's perfect."
+      description: "Custom automation workflows are designed to fit your specific business processes."
     },
     {
       step: "3",
-      title: "Develop",
-      description: "Clean, modern code transforms designs into a fast, functional website."
+      title: "Build",
+      description: "We implement and integrate automations with your existing tools and systems."
     },
     {
       step: "4",
-      title: "Launch",
-      description: "Thorough testing, optimization, and a smooth launch with ongoing support."
+      title: "Optimize",
+      description: "Continuous monitoring and refinement ensures peak performance and ROI."
     }
   ];
 
   const benefits = [
     {
-      title: "Mobile-First Design",
-      description: "Over 60% of web traffic comes from mobile devices. Your site will look stunning and convert visitors on every screen size."
+      title: "Save Hours Every Week",
+      description: "Reclaim 10-20+ hours per week by automating repetitive tasks. Focus on what actually grows your business."
     },
     {
-      title: "Fast Load Times",
-      description: "Every second counts. Our optimized sites load in under 3 seconds, reducing bounce rates and improving conversions."
+      title: "Reduce Human Error",
+      description: "Automated systems don't get tired or make typos. Ensure accuracy and consistency in every process."
     },
     {
-      title: "Built for Conversions",
-      description: "Strategic layouts, compelling CTAs, and user-friendly navigation guide visitors toward taking action."
+      title: "Scale Without Hiring",
+      description: "Handle 10x the workload without adding headcount. AI automation grows with your business."
     },
     {
-      title: "Easy to Manage",
-      description: "Update content, add pages, and make changes yourself with intuitive content management—no coding required."
+      title: "24/7 Operations",
+      description: "Your automations work around the clock—responding to leads, processing orders, and updating records while you sleep."
     }
   ];
 
   const faqs: FAQProps[] = [
     {
-      question: "How long does it take to build a website?",
-      answer: "Most websites take 4-8 weeks from kickoff to launch, depending on complexity and content readiness. Simple sites can be completed faster, while larger projects with custom features may take longer. We'll provide a detailed timeline during our initial consultation."
+      question: "What is AI automation and how does it work?",
+      answer: "AI automation uses artificial intelligence and software to perform repetitive tasks that would normally require human effort. This includes things like responding to emails, scheduling appointments, processing data, and generating reports. The AI learns your business rules and executes tasks automatically, freeing your team to focus on higher-value work."
     },
     {
-      question: "What's included in your web design service?",
-      answer: "Our service includes discovery and strategy, custom design mockups, responsive development, SEO foundation, contact forms, analytics setup, basic security, and launch support. We also provide training so you can manage your content independently."
+      question: "What tasks can be automated in my business?",
+      answer: "Common automation candidates include email responses, appointment scheduling, invoice processing, data entry, social media posting, customer follow-ups, report generation, and inventory updates. During our consultation, we'll identify the specific tasks in your business that offer the highest ROI when automated."
     },
     {
-      question: "Do you provide hosting and maintenance?",
-      answer: "Yes, we offer managed hosting and maintenance packages that include security updates, backups, uptime monitoring, and technical support. This ensures your site stays fast, secure, and up-to-date without you having to worry about the technical details."
+      question: "How much time will I actually save with automation?",
+      answer: "Most businesses save 10-20+ hours per week after implementing automation. The exact savings depend on your current processes, but we typically see ROI within the first month. We'll provide specific time-saving projections based on your workflow analysis."
     },
     {
-      question: "Will my website be mobile-friendly?",
-      answer: "Absolutely. Every website we build is fully responsive and mobile-first. We test on multiple devices and screen sizes to ensure your site looks great and functions perfectly whether visitors are on a phone, tablet, or desktop computer."
+      question: "Is AI automation expensive to implement?",
+      answer: "AI automation is more affordable than ever, and the cost is typically offset by labor savings within 1-3 months. We offer solutions for businesses of all sizes, from simple automations to comprehensive workflow systems. Think of it as hiring a tireless assistant at a fraction of the cost."
     },
     {
-      question: "Can I update the website myself?",
-      answer: "Yes! We can build sites with user-friendly content management systems that let you easily update text, images, and pages without any coding knowledge. We also provide training and documentation so you feel confident making changes on your own."
+      question: "Will automation replace my employees?",
+      answer: "No—automation handles the tedious, repetitive work so your employees can focus on what they do best: building relationships, solving complex problems, and growing your business. Most clients find their team is happier and more productive after automation frees them from mundane tasks."
     }
   ];
 
@@ -114,26 +114,26 @@ const WebsiteDesignPage: FC = () => {
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow" />
         <meta name="author" content="Litzor" />
-        <meta name="keywords" content="website design, web development, responsive design, custom website, small business website, local business web design, mobile-friendly website, SEO website, landing page design" />
-        <link rel="canonical" href="https://www.getlitzor.com/services/website-design" />
+        <meta name="keywords" content="AI automation, business automation, workflow automation, process automation, AI tools, automated scheduling, automated reporting, small business automation, local business AI" />
+        <link rel="canonical" href="https://www.getlitzor.com/services/ai-automation" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/logo.png" />
 
-        <title>Website Design & Development for Local Businesses | Litzor</title>
-        <meta name="description" content="Build beautiful, high-performing websites that convert visitors into customers. Litzor creates custom, mobile-friendly websites designed to grow your local business." />
+        <title>AI Automation & Workflows for Local Businesses | Litzor</title>
+        <meta name="description" content="Streamline your business operations with custom AI-powered automation that saves time and reduces errors. Litzor helps local businesses automate repetitive tasks and scale efficiently." />
 
         {/* Open Graph */}
-        <meta property="og:title" content="Website Design & Development for Local Businesses | Litzor" />
-        <meta property="og:description" content="Build beautiful, high-performing websites that convert visitors into customers. Custom, mobile-friendly websites for local businesses." />
-        <meta property="og:url" content="https://www.getlitzor.com/services/website-design" />
+        <meta property="og:title" content="AI Automation & Workflows for Local Businesses | Litzor" />
+        <meta property="og:description" content="Streamline your business operations with custom AI-powered automation that saves time and reduces errors." />
+        <meta property="og:url" content="https://www.getlitzor.com/services/ai-automation" />
         <meta property="og:site_name" content="Litzor" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://www.getlitzor.com/og-image.jpg" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Website Design & Development for Local Businesses | Litzor" />
-        <meta name="twitter:description" content="Build beautiful, high-performing websites that convert visitors into customers." />
+        <meta name="twitter:title" content="AI Automation & Workflows for Local Businesses | Litzor" />
+        <meta name="twitter:description" content="Streamline your business operations with custom AI-powered automation that saves time and reduces errors." />
         <meta name="twitter:image" content="https://www.getlitzor.com/og-image.jpg" />
 
         {/* Service Schema */}
@@ -142,45 +142,45 @@ const WebsiteDesignPage: FC = () => {
             {
               "@context": "https://schema.org",
               "@type": "Service",
-              "name": "Website Design & Development",
-              "serviceType": "Web Design",
+              "name": "AI Automation & Workflows",
+              "serviceType": "Business Process Automation",
               "provider": {
                 "@type": "LocalBusiness",
                 "name": "Litzor",
                 "url": "https://www.getlitzor.com",
                 "logo": "https://www.getlitzor.com/logo.png"
               },
-              "description": "Build beautiful, high-performing websites that convert visitors into customers. Custom website design and development for local businesses.",
+              "description": "Streamline your business operations with custom AI-powered automation that saves time and reduces errors. Professional automation services for local businesses.",
               "areaServed": {
                 "@type": "Country",
                 "name": "United States"
               },
               "hasOfferCatalog": {
                 "@type": "OfferCatalog",
-                "name": "Website Design Services",
+                "name": "AI Automation Services",
                 "itemListElement": [
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "Custom Website Design",
-                      "description": "Unique, branded website designs tailored to your business"
+                      "name": "Customer Communication Automation",
+                      "description": "Automated responses, follow-ups, and appointment confirmations"
                     }
                   },
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "Responsive Development",
-                      "description": "Mobile-first websites that work on all devices"
+                      "name": "Workflow Automation",
+                      "description": "Custom automated workflows for business processes"
                     }
                   },
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "Website Maintenance",
-                      "description": "Ongoing hosting, security, and support services"
+                      "name": "Reporting Automation",
+                      "description": "Automated reports and analytics dashboards"
                     }
                   }
                 ]
@@ -211,8 +211,8 @@ const WebsiteDesignPage: FC = () => {
                 {
                   "@type": "ListItem",
                   "position": 3,
-                  "name": "Website Design",
-                  "item": "https://www.getlitzor.com/services/website-design"
+                  "name": "AI Automation",
+                  "item": "https://www.getlitzor.com/services/ai-automation"
                 }
               ]
             }
@@ -228,42 +228,42 @@ const WebsiteDesignPage: FC = () => {
               "mainEntity": [
                 {
                   "@type": "Question",
-                  "name": "How long does it take to build a website?",
+                  "name": "What is AI automation and how does it work?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Most websites take 4-8 weeks from kickoff to launch, depending on complexity and content readiness. Simple sites can be completed faster, while larger projects with custom features may take longer. We'll provide a detailed timeline during our initial consultation."
+                    "text": "AI automation uses artificial intelligence and software to perform repetitive tasks that would normally require human effort. This includes things like responding to emails, scheduling appointments, processing data, and generating reports. The AI learns your business rules and executes tasks automatically, freeing your team to focus on higher-value work."
                   }
                 },
                 {
                   "@type": "Question",
-                  "name": "What's included in your web design service?",
+                  "name": "What tasks can be automated in my business?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Our service includes discovery and strategy, custom design mockups, responsive development, SEO foundation, contact forms, analytics setup, basic security, and launch support. We also provide training so you can manage your content independently."
+                    "text": "Common automation candidates include email responses, appointment scheduling, invoice processing, data entry, social media posting, customer follow-ups, report generation, and inventory updates. During our consultation, we'll identify the specific tasks in your business that offer the highest ROI when automated."
                   }
                 },
                 {
                   "@type": "Question",
-                  "name": "Do you provide hosting and maintenance?",
+                  "name": "How much time will I actually save with automation?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes, we offer managed hosting and maintenance packages that include security updates, backups, uptime monitoring, and technical support. This ensures your site stays fast, secure, and up-to-date without you having to worry about the technical details."
+                    "text": "Most businesses save 10-20+ hours per week after implementing automation. The exact savings depend on your current processes, but we typically see ROI within the first month. We'll provide specific time-saving projections based on your workflow analysis."
                   }
                 },
                 {
                   "@type": "Question",
-                  "name": "Will my website be mobile-friendly?",
+                  "name": "Is AI automation expensive to implement?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Absolutely. Every website we build is fully responsive and mobile-first. We test on multiple devices and screen sizes to ensure your site looks great and functions perfectly whether visitors are on a phone, tablet, or desktop computer."
+                    "text": "AI automation is more affordable than ever, and the cost is typically offset by labor savings within 1-3 months. We offer solutions for businesses of all sizes, from simple automations to comprehensive workflow systems. Think of it as hiring a tireless assistant at a fraction of the cost."
                   }
                 },
                 {
                   "@type": "Question",
-                  "name": "Can I update the website myself?",
+                  "name": "Will automation replace my employees?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes! We build sites with user-friendly content management systems that let you easily update text, images, and pages without any coding knowledge. We also provide training and documentation so you feel confident making changes on your own."
+                    "text": "No—automation handles the tedious, repetitive work so your employees can focus on what they do best: building relationships, solving complex problems, and growing your business. Most clients find their team is happier and more productive after automation frees them from mundane tasks."
                   }
                 }
               ]
@@ -292,7 +292,7 @@ const WebsiteDesignPage: FC = () => {
                 transition={{ duration: 0.8 }}
               >
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-950 mb-8 leading-tight">
-                  Websites That Convert Visitors Into <span className="gradient-text">Customers</span>
+                  AI Automation That Saves Time and <span className="gradient-text">Scales</span> Your Business
                 </h1>
               </motion.div>
 
@@ -302,7 +302,7 @@ const WebsiteDesignPage: FC = () => {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="text-xl md:text-2xl text-gray-800 mb-12 max-w-3xl leading-relaxed"
               >
-                Your website is your hardest-working employee. We build beautiful, fast, mobile-friendly sites that showcase your business and turn visitors into paying customers.
+                Stop doing repetitive tasks manually. Our custom AI automations handle the busywork so you can focus on growing your business and serving your customers.
               </motion.p>
 
               <motion.div
@@ -323,17 +323,17 @@ const WebsiteDesignPage: FC = () => {
                   </span>
                 </Link>
 
-                <Link
-                  href="/#work"
+                <a
+                  href="#features"
                   className="group px-10 py-5 bg-white/80 backdrop-blur-sm text-gray-900 font-semibold rounded-xl border-2 border-gray-200 hover:border-red-300 hover:bg-white transition-all duration-300 hover:shadow-xl hover:scale-105 text-center"
                 >
                   <span className="flex items-center justify-center">
-                    View Our Work
-                    <svg className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    Learn More
+                    <svg className="ml-2 w-5 h-5 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
                   </span>
-                </Link>
+                </a>
               </motion.div>
             </div>
           </div>
@@ -353,10 +353,10 @@ const WebsiteDesignPage: FC = () => {
               className="text-center mb-20"
             >
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-950 mb-6">
-                What We Build for Your Business
+                What We Automate for Your Business
               </h2>
               <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-                Every website we create combines stunning design with powerful functionality to help your business succeed online.
+                From customer communication to data processing, we automate the tasks that drain your time and energy.
               </p>
             </motion.div>
 
@@ -403,10 +403,10 @@ const WebsiteDesignPage: FC = () => {
               className="text-center mb-20"
             >
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-950 mb-6">
-                Our Website Development Process
+                Our Automation Process
               </h2>
               <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-                A proven four-step process that delivers results on time and on budget.
+                A systematic approach to identifying, building, and optimizing automations for your business.
               </p>
             </motion.div>
 
@@ -449,10 +449,10 @@ const WebsiteDesignPage: FC = () => {
               className="text-center mb-20"
             >
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-950 mb-6">
-                Why Choose Litzor for Website Design
+                Why Choose Litzor for AI Automation
               </h2>
               <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-                We don't just build websites—we build growth engines for your business.
+                We don't just automate tasks—we transform how your business operates.
               </p>
             </motion.div>
 
@@ -499,7 +499,7 @@ const WebsiteDesignPage: FC = () => {
                 Frequently Asked Questions
               </h2>
               <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-                Get answers to common questions about our website design services.
+                Get answers to common questions about our AI automation services.
               </p>
             </motion.div>
 
@@ -545,11 +545,11 @@ const WebsiteDesignPage: FC = () => {
               transition={{ duration: 0.7 }}
             >
               <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-8 leading-tight">
-                Ready for a Website That Works?
+                Ready to Automate Your Business?
               </h2>
 
               <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-3xl mx-auto leading-relaxed">
-                Let's build a website that represents your business and drives real results. Get started with a free consultation today.
+                Let's identify the automations that will save you the most time and money. Get started with a free workflow analysis today.
               </p>
 
               <motion.div
@@ -594,4 +594,4 @@ const WebsiteDesignPage: FC = () => {
   );
 }
 
-export default WebsiteDesignPage;
+export default AIAutomationPage;
