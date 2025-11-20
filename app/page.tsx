@@ -12,6 +12,7 @@ interface ServiceProps {
   title: string;
   description: string;
   icon: string;
+  link: string;
 }
 
 interface TestimonialProps {
@@ -31,32 +32,38 @@ const Home: FC = () => {
     {
       title: "Lead Generation",
       description: "Attract and capture qualified leads with proven funnels and landing pages that convert.",
-      icon: "🧲"
+      icon: "🧲",
+      link: "/services/lead-generation"
     },
     {
       title: "Website Design & Development",
       description: "Build beautiful, high-performing websites that convert visitors into customers and grow your business.",
-      icon: "💻"
+      icon: "💻",
+      link: "/services/website-design"
     },
     {
       title: "AI Automation & Workflows",
       description: "Streamline your business operations with custom AI-powered automation that saves time and reduces errors.",
-      icon: "🤖"
+      icon: "🤖",
+      link: "/services/ai-automation"
     },
     {
       title: "SEO Optimization",
       description: "Improve your search rankings with our advanced SEO techniques designed for 2025 algorithms.",
-      icon: "🔍"
+      icon: "🔍",
+      link: "/services/seo-optimization"
     },
     {
       title: "Analytics & Insights",
       description: "Make data-driven decisions with our comprehensive analytics and reporting tools.",
-      icon: "📊"
+      icon: "📊",
+      link: "/services/analytics"
     },
     {
       title: "Conversion Optimization",
       description: "Transform visitors into customers with our proven conversion strategies.",
-      icon: "🎯"
+      icon: "🎯",
+      link: "/services/conversion-optimization"
     }
   ];
 
@@ -373,41 +380,42 @@ const Home: FC = () => {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {services.map((service, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  whileHover={{ y: -12 }}
-                  className="group relative"
-                >
-                  {/* Gradient border effect */}
-                  <div className="absolute -inset-0.5 bg-gradient-to-r from-red-500 via-orange-500 to-pink-500 rounded-2xl opacity-0 group-hover:opacity-100 blur transition-all duration-500"></div>
+                <Link key={index} href={service.link}>
+                  <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                    whileHover={{ y: -12 }}
+                    className="group relative cursor-pointer h-full"
+                  >
+                    {/* Gradient border effect */}
+                    <div className="absolute -inset-0.5 bg-gradient-to-r from-red-500 via-orange-500 to-pink-500 rounded-2xl opacity-0 group-hover:opacity-100 blur transition-all duration-500"></div>
 
-                  <div className="relative glass-card p-8 rounded-2xl h-full hover:shadow-2xl transition-all duration-500">
-                    {/* Icon with gradient background */}
-                    <div className="w-16 h-16 mb-6 rounded-xl bg-gradient-to-br from-red-500 to-orange-500 flex items-center justify-center text-3xl transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 shadow-lg">
-                      {service.icon}
+                    <div className="relative glass-card p-8 rounded-2xl h-full hover:shadow-2xl transition-all duration-500">
+                      {/* Icon with gradient background */}
+                      <div className="w-16 h-16 mb-6 rounded-xl bg-gradient-to-br from-red-500 to-orange-500 flex items-center justify-center text-3xl transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 shadow-lg">
+                        {service.icon}
+                      </div>
+
+                      <h3 className="text-2xl font-bold text-gray-950 mb-4 group-hover:text-red-600 transition-colors duration-300">
+                        {service.title}
+                      </h3>
+
+                      <p className="text-gray-700 leading-relaxed">
+                        {service.description}
+                      </p>
+
+                      {/* Hover arrow indicator */}
+                      <div className="mt-6 flex items-center text-red-500 opacity-0 group-hover:opacity-100 transform translate-x-0 group-hover:translate-x-2 transition-all duration-300">
+                        <span className="text-sm font-semibold">Learn more</span>
+                        <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </div>
                     </div>
-
-                    <h3 className="text-2xl font-bold text-gray-950 mb-4 group-hover:text-red-600 transition-colors duration-300">
-                      {service.title}
-                    </h3>
-
-                    <p className="text-gray-700 leading-relaxed">
-                      {service.description}
-                    </p>
-
-                    {/* Hover arrow indicator */}
-                    <div className="mt-6 flex items-center text-red-500 opacity-0 group-hover:opacity-100 transform translate-x-0 group-hover:translate-x-2 transition-all duration-300">
-                      <span className="text-sm font-semibold">Learn more</span>
-                      <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                      </svg>
-                    </div>
-                  </div>
-                </motion.div>
+                  </motion.div>
+                </Link>
               ))}
             </div>
           </div>
@@ -431,7 +439,7 @@ const Home: FC = () => {
               </p>
             </motion.div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-10">
               {portfolioItems.map((item, index) => (
                 <motion.div
                   key={index}
