@@ -364,24 +364,3 @@ export default function ConversionOptimizationPage() {
     </div>
   );
 }
-
-export const metadata = {
-  title: 'Conversion Optimization Services | Litzor',
-  description: 'Increase your conversion rates with data-driven optimization. A/B testing, landing page optimization, and UX analysis to turn more visitors into customers.',
-  keywords: 'conversion optimization, CRO, A/B testing, landing page optimization, conversion rate, user experience, funnel optimization',
-  openGraph: {
-    title: 'Conversion Optimization Services | Litzor',
-    description: 'Turn more visitors into customers with data-driven conversion rate optimization services.',
-    url: 'https://www.getlitzor.com/services/conversion-optimization',
-    siteName: 'Litzor',
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Conversion Optimization Services | Litzor',
-    description: 'Turn more visitors into customers with data-driven conversion rate optimization services.',
-  },
-  alternates: {
-    canonical: 'https://www.getlitzor.com/services/conversion-optimization',
-  },
-};
