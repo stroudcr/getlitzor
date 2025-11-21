@@ -4,11 +4,24 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   compress: true,
+
+  // Enable React Compiler for automatic memoization
+  reactCompiler: true,
+
   images: {
-    domains: ['placehold.co'],
+    // Updated for Next.js 16: Replace deprecated 'domains' with 'remotePatterns'
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'placehold.co',
+      },
+    ],
     formats: ['image/webp', 'image/avif'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+
+    // Required in Next.js 16
+    qualities: [75],
   },
   async headers() {
     return [

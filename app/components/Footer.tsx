@@ -9,8 +9,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center mb-6">
-              <Image src="/logo.svg" alt="Litzor Logo" width={40} height={40} className="mr-2" />
-              <span className="text-2xl font-bold text-gray-900">Litzor</span>
+              <Image src="/logo.svg" alt="Litzor Logo" width={160} height={160} className="mr-2" />
             </div>
             <p className="text-gray-600">
             Marketing That Brings You More Business.
