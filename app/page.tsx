@@ -118,7 +118,7 @@ const Home: FC = () => {
         <meta name="keywords" content="AI marketing, digital marketing, local business marketing, SEO, social media marketing, website design, web development, conversion optimization, marketing automation" />
         <link rel="canonical" href="https://www.getlitzor.com" />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/logo.png" />
+        <link rel="apple-touch-icon" href="/logo.svg" />
         
         {/* Enhanced Structured Data */}
         <script type="application/ld+json">
@@ -129,7 +129,7 @@ const Home: FC = () => {
               "name": "Litzor",
               "description": "AI-powered marketing services for local businesses",
               "url": "https://www.getlitzor.com",
-              "logo": "https://www.getlitzor.com/logo.png",
+              "logo": "https://www.getlitzor.com/logo.svg",
               "image": "https://www.getlitzor.com/og-image.jpg",
               "telephone": "+1-XXX-XXX-XXXX",
               "email": "hello@getlitzor.com",
@@ -280,12 +280,12 @@ const Home: FC = () => {
         {/* Hero Section */}
 <section className="relative py-24 md:py-40 overflow-hidden grain">
   {/* Animated gradient background */}
-  <div className="absolute inset-0 bg-gradient-to-br from-red-50 via-orange-50 to-pink-50 animate-gradient"></div>
+  <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-sky-50 to-cyan-50 animate-gradient"></div>
 
   {/* Floating geometric shapes */}
-  <div className="absolute top-20 right-10 w-72 h-72 bg-gradient-to-br from-red-400/20 to-orange-400/20 rounded-full blur-3xl animate-float"></div>
-  <div className="absolute -bottom-20 -left-20 w-96 h-96 bg-gradient-to-tr from-pink-400/20 to-red-400/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
-  <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-gradient-to-br from-orange-400/15 to-red-400/15 rounded-full blur-2xl animate-float" style={{ animationDelay: '4s' }}></div>
+  <div className="absolute top-20 right-10 w-72 h-72 bg-gradient-to-br from-[#03afdc]/20 to-[#0f3e66]/20 rounded-full blur-3xl animate-float"></div>
+  <div className="absolute -bottom-20 -left-20 w-96 h-96 bg-gradient-to-tr from-cyan-400/20 to-[#03afdc]/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
+  <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-gradient-to-br from-[#03afdc]/15 to-[#0f3e66]/15 rounded-full blur-2xl animate-float" style={{ animationDelay: '4s' }}></div>
 
   <div className="container mx-auto px-4 relative z-10">
     <div className="max-w-4xl">
@@ -316,7 +316,7 @@ const Home: FC = () => {
       >
         <a
           href="#contact"
-          className="group relative px-10 py-5 bg-gradient-to-r from-red-500 via-orange-500 to-red-500 text-white font-semibold rounded-xl hover:shadow-2xl transition-all duration-300 overflow-hidden animate-gradient hover:scale-105"
+          className="group relative px-10 py-5 bg-gradient-to-r from-[#03afdc] via-[#0f3e66] to-[#03afdc] text-white font-semibold rounded-xl hover:shadow-2xl transition-all duration-300 overflow-hidden animate-gradient hover:scale-105"
         >
           <span className="relative z-10 flex items-center justify-center">
             Get Started
@@ -328,7 +328,7 @@ const Home: FC = () => {
 
         <a
           href="#services"
-          className="group px-10 py-5 bg-white/80 backdrop-blur-sm text-gray-900 font-semibold rounded-xl border-2 border-gray-200 hover:border-red-300 hover:bg-white transition-all duration-300 hover:shadow-xl hover:scale-105"
+          className="group px-10 py-5 bg-white/80 backdrop-blur-sm text-gray-900 font-semibold rounded-xl border-2 border-gray-200 hover:border-[#03afdc]/50 hover:bg-white transition-all duration-300 hover:shadow-xl hover:scale-105"
         >
           <span className="flex items-center justify-center">
             Learn More
@@ -359,8 +359,8 @@ const Home: FC = () => {
         {/* Services Section */}
         <section id="services" className="py-24 bg-gradient-to-b from-white via-gray-50 to-white relative overflow-hidden">
           {/* Background decoration */}
-          <div className="absolute top-0 right-0 w-96 h-96 bg-red-100/30 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 left-0 w-96 h-96 bg-orange-100/30 rounded-full blur-3xl"></div>
+          <div className="absolute top-0 right-0 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 left-0 w-96 h-96 bg-cyan-100/30 rounded-full blur-3xl"></div>
 
           <div className="container mx-auto px-4 relative z-10">
             <motion.div
@@ -390,15 +390,15 @@ const Home: FC = () => {
                     className="group relative cursor-pointer h-full"
                   >
                     {/* Gradient border effect */}
-                    <div className="absolute -inset-0.5 bg-gradient-to-r from-red-500 via-orange-500 to-pink-500 rounded-2xl opacity-0 group-hover:opacity-100 blur transition-all duration-500"></div>
+                    <div className="absolute -inset-0.5 bg-gradient-to-r from-[#03afdc] via-[#0f3e66] to-[#03afdc] rounded-2xl opacity-0 group-hover:opacity-100 blur transition-all duration-500"></div>
 
                     <div className="relative glass-card p-8 rounded-2xl h-full hover:shadow-2xl transition-all duration-500">
                       {/* Icon with gradient background */}
-                      <div className="w-16 h-16 mb-6 rounded-xl bg-gradient-to-br from-red-500 to-orange-500 flex items-center justify-center text-3xl transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 shadow-lg">
+                      <div className="w-16 h-16 mb-6 rounded-xl bg-gradient-to-br from-[#03afdc] to-[#0f3e66] flex items-center justify-center text-3xl transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 shadow-lg">
                         {service.icon}
                       </div>
 
-                      <h3 className="text-2xl font-bold text-gray-950 mb-4 group-hover:text-red-600 transition-colors duration-300">
+                      <h3 className="text-2xl font-bold text-gray-950 mb-4 group-hover:text-[#03afdc] transition-colors duration-300">
                         {service.title}
                       </h3>
 
@@ -407,7 +407,7 @@ const Home: FC = () => {
                       </p>
 
                       {/* Hover arrow indicator */}
-                      <div className="mt-6 flex items-center text-red-500 opacity-0 group-hover:opacity-100 transform translate-x-0 group-hover:translate-x-2 transition-all duration-300">
+                      <div className="mt-6 flex items-center text-[#03afdc] opacity-0 group-hover:opacity-100 transform translate-x-0 group-hover:translate-x-2 transition-all duration-300">
                         <span className="text-sm font-semibold">Learn more</span>
                         <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -431,10 +431,10 @@ const Home: FC = () => {
               transition={{ duration: 0.6 }}
               className="text-center mb-20"
             >
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 drop-shadow-sm" style={{ color: '#ef4444' }}>
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 drop-shadow-sm" style={{ color: '#03afdc' }}>
                 Our Work
               </h2>
-              <p className="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed drop-shadow-sm" style={{ color: '#f97316' }}>
+              <p className="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed drop-shadow-sm" style={{ color: '#0f3e66' }}>
                 Real websites we've built for real businesses—designed to get results.
               </p>
             </motion.div>
@@ -462,11 +462,11 @@ const Home: FC = () => {
                         />
 
                         {/* Gradient overlay on hover */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div className="absolute inset-0 bg-gradient-to-t from-[#0f3e66]/70 via-[#0f3e66]/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
                         {/* View Project button reveal */}
                         <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
-                          <div className="px-4 py-2 md:px-8 md:py-4 bg-white text-gray-900 font-bold rounded-xl shadow-2xl flex items-center gap-2 hover:bg-red-500 hover:text-white transition-colors duration-300 text-sm md:text-base">
+                          <div className="px-4 py-2 md:px-8 md:py-4 bg-white text-gray-900 font-bold rounded-xl shadow-2xl flex items-center gap-2 hover:bg-[#03afdc] hover:text-white transition-colors duration-300 text-sm md:text-base">
                             View Project
                             <svg className="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -477,10 +477,10 @@ const Home: FC = () => {
 
                       {/* Title with slide-up animation */}
                       <div className="p-3 md:p-6 bg-white">
-                        <h3 className="text-base md:text-2xl font-bold text-gray-950 group-hover:text-red-600 transition-colors duration-300">
+                        <h3 className="text-base md:text-2xl font-bold text-gray-950 group-hover:text-[#03afdc] transition-colors duration-300">
                           {item.title}
                         </h3>
-                        <div className="mt-2 md:mt-3 flex items-center text-red-500 font-semibold text-xs md:text-sm">
+                        <div className="mt-2 md:mt-3 flex items-center text-[#03afdc] font-semibold text-xs md:text-sm">
                           <span>Visit Site</span>
                           <svg className="w-3 h-3 md:w-4 md:h-4 ml-1 md:ml-2 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
@@ -498,8 +498,8 @@ const Home: FC = () => {
         {/* About Section */}
         <section id="about" className="py-24 bg-gradient-to-b from-white via-cream-50 to-white relative overflow-hidden">
           {/* Background decoration */}
-          <div className="absolute top-1/4 right-0 w-96 h-96 bg-orange-100/40 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 left-0 w-96 h-96 bg-red-100/40 rounded-full blur-3xl"></div>
+          <div className="absolute top-1/4 right-0 w-96 h-96 bg-cyan-100/40 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-100/40 rounded-full blur-3xl"></div>
 
           <div className="container mx-auto px-4 relative z-10">
             <div className="flex flex-col lg:flex-row items-center gap-16">
@@ -513,7 +513,7 @@ const Home: FC = () => {
               >
                 <div className="relative">
                   {/* Main image with gradient border */}
-                  <div className="relative w-full h-80 sm:h-96 md:h-[450px] lg:h-[500px] rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-red-500 to-orange-500 p-1">
+                  <div className="relative w-full h-80 sm:h-96 md:h-[450px] lg:h-[500px] rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-[#03afdc] to-[#0f3e66] p-1">
                     <div className="relative w-full h-full rounded-3xl overflow-hidden">
                       <Image
                         src="/about-image.jpg"
@@ -532,14 +532,14 @@ const Home: FC = () => {
                     whileInView={{ scale: 1, rotate: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: 0.3 }}
-                    className="absolute -bottom-8 -right-8 w-36 h-36 bg-gradient-to-br from-red-500 to-orange-500 rounded-3xl flex items-center justify-center shadow-2xl transform hover:rotate-6 transition-transform duration-300"
+                    className="absolute -bottom-8 -right-8 w-36 h-36 bg-gradient-to-br from-[#03afdc] to-[#0f3e66] rounded-3xl flex items-center justify-center shadow-2xl transform hover:rotate-6 transition-transform duration-300"
                   >
-                    <Image src="/logo.png" alt="Litzor Logo" width={70} height={70} />
+                    <Image src="/logo.svg" alt="Litzor Logo" width={70} height={70} />
                   </motion.div>
 
                   {/* Decorative shapes */}
-                  <div className="absolute -top-6 -left-6 w-24 h-24 bg-gradient-to-br from-pink-400/30 to-red-400/30 rounded-2xl blur-xl"></div>
-                  <div className="absolute -bottom-4 left-1/3 w-20 h-20 bg-gradient-to-br from-orange-400/30 to-yellow-400/30 rounded-full blur-lg"></div>
+                  <div className="absolute -top-6 -left-6 w-24 h-24 bg-gradient-to-br from-cyan-400/30 to-blue-400/30 rounded-2xl blur-xl"></div>
+                  <div className="absolute -bottom-4 left-1/3 w-20 h-20 bg-gradient-to-br from-[#03afdc]/30 to-sky-400/30 rounded-full blur-lg"></div>
                 </div>
               </motion.div>
 
@@ -570,12 +570,12 @@ const Home: FC = () => {
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: 0.2 }}
-                    className="group relative bg-gradient-to-br from-white to-red-50 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-red-100"
+                    className="group relative bg-gradient-to-br from-white to-blue-50 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-blue-100"
                   >
                     <div className="text-5xl font-bold gradient-text mb-3">0%</div>
                     <p className="text-lg font-semibold text-gray-700">Outdated Marketing Tactics</p>
                     {/* Decorative corner */}
-                    <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-red-400/20 to-transparent rounded-bl-3xl"></div>
+                    <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-[#03afdc]/20 to-transparent rounded-bl-3xl"></div>
                   </motion.div>
 
                   <motion.div
@@ -583,12 +583,12 @@ const Home: FC = () => {
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: 0.3 }}
-                    className="group relative bg-gradient-to-br from-white to-orange-50 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-orange-100"
+                    className="group relative bg-gradient-to-br from-white to-cyan-50 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-cyan-100"
                   >
                     <div className="text-5xl font-bold gradient-text mb-3">∞</div>
                     <p className="text-lg font-semibold text-gray-700">Scalability Potential</p>
                     {/* Decorative corner */}
-                    <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-orange-400/20 to-transparent rounded-bl-3xl"></div>
+                    <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-cyan-400/20 to-transparent rounded-bl-3xl"></div>
                   </motion.div>
                 </div>
               </motion.div>
@@ -599,8 +599,8 @@ const Home: FC = () => {
         {/* Testimonials Section */}
         <section id="testimonials" className="py-24 bg-gradient-to-b from-white to-cream-50 relative overflow-hidden">
           {/* Background decorations */}
-          <div className="absolute top-0 left-1/4 w-72 h-72 bg-pink-100/40 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-red-100/30 rounded-full blur-3xl"></div>
+          <div className="absolute top-0 left-1/4 w-72 h-72 bg-cyan-100/40 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl"></div>
 
           <div className="container mx-auto px-4 relative z-10">
             <motion.div
@@ -634,7 +634,7 @@ const Home: FC = () => {
                     className="group relative"
                   >
                     {/* Card with gradient border */}
-                    <div className="absolute -inset-0.5 bg-gradient-to-r from-red-500 via-orange-500 to-pink-500 rounded-3xl opacity-0 group-hover:opacity-100 blur transition-all duration-500"></div>
+                    <div className="absolute -inset-0.5 bg-gradient-to-r from-[#03afdc] via-[#0f3e66] to-[#03afdc] rounded-3xl opacity-0 group-hover:opacity-100 blur transition-all duration-500"></div>
 
                     <div className="relative bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 h-full flex flex-col">
                       {/* Quote mark with gradient */}
@@ -657,7 +657,7 @@ const Home: FC = () => {
                       {/* Author info with avatar */}
                       <div className="flex items-center gap-4 pt-4 border-t border-gray-100">
                         {/* Avatar with initials */}
-                        <div className="w-14 h-14 rounded-full bg-gradient-to-br from-red-500 to-orange-500 flex items-center justify-center text-white font-bold text-lg shadow-lg group-hover:scale-110 transition-transform duration-300">
+                        <div className="w-14 h-14 rounded-full bg-gradient-to-br from-[#03afdc] to-[#0f3e66] flex items-center justify-center text-white font-bold text-lg shadow-lg group-hover:scale-110 transition-transform duration-300">
                           {initials}
                         </div>
 
@@ -668,7 +668,7 @@ const Home: FC = () => {
                       </div>
 
                       {/* Decorative corner accent */}
-                      <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-red-400/10 to-transparent rounded-bl-3xl rounded-tr-3xl"></div>
+                      <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-[#03afdc]/10 to-transparent rounded-bl-3xl rounded-tr-3xl"></div>
                     </div>
                   </motion.div>
                 );
@@ -680,7 +680,7 @@ const Home: FC = () => {
         {/* CTA Section */}
         <section className="relative py-32 overflow-hidden">
           {/* Animated gradient background */}
-          <div className="absolute inset-0 bg-gradient-to-br from-red-600 via-red-500 to-orange-500 animate-gradient"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-[#0f3e66] via-[#03afdc] to-[#0f3e66] animate-gradient"></div>
 
           {/* Particle/dot pattern overlay */}
           <div className="absolute inset-0 opacity-10" style={{
@@ -690,7 +690,7 @@ const Home: FC = () => {
 
           {/* Floating shapes */}
           <div className="absolute top-10 right-10 w-64 h-64 bg-white/10 rounded-full blur-3xl animate-float"></div>
-          <div className="absolute bottom-10 left-10 w-96 h-96 bg-orange-400/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
+          <div className="absolute bottom-10 left-10 w-96 h-96 bg-[#03afdc]/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
 
           <div className="container mx-auto px-4 text-center relative z-10">
             <motion.div
@@ -715,7 +715,7 @@ const Home: FC = () => {
                 transition={{ duration: 0.6, delay: 0.3 }}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.98 }}
-                className="group inline-flex items-center gap-3 px-12 py-6 bg-white text-red-600 font-bold text-lg rounded-2xl hover:bg-cream-50 transition-all duration-300 shadow-2xl hover:shadow-[0_20px_60px_rgba(0,0,0,0.3)] relative overflow-hidden"
+                className="group inline-flex items-center gap-3 px-12 py-6 bg-white text-[#03afdc] font-bold text-lg rounded-2xl hover:bg-cream-50 transition-all duration-300 shadow-2xl hover:shadow-[0_20px_60px_rgba(0,0,0,0.3)] relative overflow-hidden"
               >
                 {/* Shimmer effect */}
                 <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></span>
@@ -761,8 +761,8 @@ const Home: FC = () => {
         {/* Contact Section */}
         <section id="contact" className="py-24 bg-gradient-to-b from-cream-50 to-white relative overflow-hidden">
           {/* Background decorations */}
-          <div className="absolute top-0 right-0 w-96 h-96 bg-red-100/30 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 left-0 w-96 h-96 bg-orange-100/30 rounded-full blur-3xl"></div>
+          <div className="absolute top-0 right-0 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 left-0 w-96 h-96 bg-cyan-100/30 rounded-full blur-3xl"></div>
 
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-6xl mx-auto">
@@ -773,10 +773,10 @@ const Home: FC = () => {
                 transition={{ duration: 0.6 }}
                 className="text-center mb-16"
               >
-                <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 drop-shadow-sm" style={{ color: '#ef4444' }}>
+                <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 drop-shadow-sm" style={{ color: '#03afdc' }}>
                   Contact Us
                 </h2>
-                <p className="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed drop-shadow-sm" style={{ color: '#f97316' }}>
+                <p className="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed drop-shadow-sm" style={{ color: '#0f3e66' }}>
                   Have questions or ready to start? Reach out to our team.
                 </p>
               </motion.div>
@@ -797,12 +797,12 @@ const Home: FC = () => {
                         <input
                           type="text"
                           id="name"
-                          className="peer w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-red-500 transition-all duration-300 placeholder-transparent"
+                          className="peer w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-[#03afdc] transition-all duration-300 placeholder-transparent"
                           placeholder="Full Name"
                         />
                         <label
                           htmlFor="name"
-                          className="absolute left-4 -top-3 bg-white px-2 text-sm font-semibold text-gray-600 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-4 peer-placeholder-shown:text-gray-400 peer-focus:-top-3 peer-focus:text-sm peer-focus:text-red-500"
+                          className="absolute left-4 -top-3 bg-white px-2 text-sm font-semibold text-gray-600 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-4 peer-placeholder-shown:text-gray-400 peer-focus:-top-3 peer-focus:text-sm peer-focus:text-[#03afdc]"
                         >
                           Full Name
                         </label>
@@ -813,12 +813,12 @@ const Home: FC = () => {
                         <input
                           type="email"
                           id="email"
-                          className="peer w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-red-500 transition-all duration-300 placeholder-transparent"
+                          className="peer w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-[#03afdc] transition-all duration-300 placeholder-transparent"
                           placeholder="Email Address"
                         />
                         <label
                           htmlFor="email"
-                          className="absolute left-4 -top-3 bg-white px-2 text-sm font-semibold text-gray-600 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-4 peer-placeholder-shown:text-gray-400 peer-focus:-top-3 peer-focus:text-sm peer-focus:text-red-500"
+                          className="absolute left-4 -top-3 bg-white px-2 text-sm font-semibold text-gray-600 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-4 peer-placeholder-shown:text-gray-400 peer-focus:-top-3 peer-focus:text-sm peer-focus:text-[#03afdc]"
                         >
                           Email Address
                         </label>
@@ -829,12 +829,12 @@ const Home: FC = () => {
                         <textarea
                           id="message"
                           rows={5}
-                          className="peer w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-red-500 transition-all duration-300 placeholder-transparent resize-none"
+                          className="peer w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-[#03afdc] transition-all duration-300 placeholder-transparent resize-none"
                           placeholder="Message"
                         ></textarea>
                         <label
                           htmlFor="message"
-                          className="absolute left-4 -top-3 bg-white px-2 text-sm font-semibold text-gray-600 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-4 peer-placeholder-shown:text-gray-400 peer-focus:-top-3 peer-focus:text-sm peer-focus:text-red-500"
+                          className="absolute left-4 -top-3 bg-white px-2 text-sm font-semibold text-gray-600 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-4 peer-placeholder-shown:text-gray-400 peer-focus:-top-3 peer-focus:text-sm peer-focus:text-[#03afdc]"
                         >
                           How can we help you?
                         </label>
@@ -845,7 +845,7 @@ const Home: FC = () => {
                         type="submit"
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
-                        className="group w-full px-8 py-5 bg-gradient-to-r from-red-500 to-orange-500 text-white font-bold text-lg rounded-xl hover:shadow-2xl transition-all duration-300 relative overflow-hidden"
+                        className="group w-full px-8 py-5 bg-gradient-to-r from-[#03afdc] to-[#0f3e66] text-white font-bold text-lg rounded-xl hover:shadow-2xl transition-all duration-300 relative overflow-hidden"
                       >
                         <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></span>
                         <span className="relative z-10 flex items-center justify-center gap-2">
@@ -859,13 +859,13 @@ const Home: FC = () => {
                   </div>
 
                   {/* Info Side */}
-                  <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 p-8 md:p-12 lg:p-16 flex flex-col justify-between relative overflow-hidden">
+                  <div className="bg-gradient-to-br from-blue-50 via-cyan-50 to-sky-50 p-8 md:p-12 lg:p-16 flex flex-col justify-between relative overflow-hidden">
                     {/* Decorative shapes */}
-                    <div className="absolute top-0 right-0 w-64 h-64 bg-red-500/10 rounded-full blur-3xl"></div>
-                    <div className="absolute bottom-0 left-0 w-64 h-64 bg-orange-500/10 rounded-full blur-3xl"></div>
+                    <div className="absolute top-0 right-0 w-64 h-64 bg-[#03afdc]/10 rounded-full blur-3xl"></div>
+                    <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#0f3e66]/10 rounded-full blur-3xl"></div>
 
                     <div className="relative z-10">
-                      <h3 className="text-3xl md:text-4xl font-bold text-white mb-8">Get in Touch</h3>
+                      <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Get in Touch</h3>
 
                       <div className="space-y-6">
                         {/* Email */}
@@ -876,14 +876,14 @@ const Home: FC = () => {
                           transition={{ duration: 0.5 }}
                           className="flex items-start gap-4 group"
                         >
-                          <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-red-500 to-orange-500 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                          <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-[#03afdc] to-[#0f3e66] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                             </svg>
                           </div>
                           <div>
-                            <p className="text-gray-400 text-sm font-semibold mb-1">Email</p>
-                            <a href="mailto:info@getlitzor.com" className="text-white text-lg hover:text-red-400 transition-colors">
+                            <p className="text-gray-600 text-sm font-semibold mb-1">Email</p>
+                            <a href="mailto:info@getlitzor.com" className="text-gray-800 text-lg hover:text-[#03afdc] transition-colors">
                               info@getlitzor.com
                             </a>
                           </div>
@@ -897,14 +897,14 @@ const Home: FC = () => {
                           transition={{ duration: 0.5, delay: 0.1 }}
                           className="flex items-start gap-4 group"
                         >
-                          <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                          <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-[#0f3e66] to-[#03afdc] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
                           </div>
                           <div>
-                            <p className="text-gray-400 text-sm font-semibold mb-1">Response Time</p>
-                            <p className="text-white text-lg">Within 24 hours</p>
+                            <p className="text-gray-600 text-sm font-semibold mb-1">Response Time</p>
+                            <p className="text-gray-800 text-lg">Within 24 hours</p>
                           </div>
                         </motion.div>
                       </div>
@@ -915,12 +915,12 @@ const Home: FC = () => {
                         whileInView={{ opacity: 1 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.7, delay: 0.3 }}
-                        className="mt-12 p-6 bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10"
+                        className="mt-12 p-6 bg-white/80 backdrop-blur-sm rounded-2xl border border-gray-200"
                       >
-                        <p className="text-white/80 italic text-lg leading-relaxed">
+                        <p className="text-gray-700 italic text-lg leading-relaxed">
                           "We're excited to learn about your business and discuss how we can help you grow."
                         </p>
-                        <p className="text-red-400 font-bold mt-4">— The Litzor Team</p>
+                        <p className="text-[#03afdc] font-bold mt-4">— The Litzor Team</p>
                       </motion.div>
                     </div>
                   </div>
@@ -931,45 +931,45 @@ const Home: FC = () => {
         </section>
       </main>
 
-      <footer className="bg-gray-900 text-white py-12">
+      <footer className="bg-gray-50 border-t-4 border-[#03afdc] text-gray-900 py-12">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center mb-6">
-                <Image src="/logo.png" alt="Litzor Logo" width={40} height={40} className="mr-2" />
-                <span className="text-2xl font-bold">Litzor</span>
+                <Image src="/logo.svg" alt="Litzor Logo" width={40} height={40} className="mr-2" />
+                <span className="text-2xl font-bold text-gray-900">Litzor</span>
               </div>
-              <p className="text-gray-400">
+              <p className="text-gray-600">
               Marketing That Brings You More Business.
               </p>
             </div>
             <div>
-              <h4 className="text-lg font-bold mb-4">Quick Links</h4>
+              <h4 className="text-lg font-bold text-gray-900 mb-4">Quick Links</h4>
               <ul className="space-y-2">
-                <li><a href="#services" className="text-gray-400 hover:text-red-500 transition">Services</a></li>
-                <li><a href="#work" className="text-gray-400 hover:text-red-500 transition">Our Work</a></li>
-                <li><a href="#about" className="text-gray-400 hover:text-red-500 transition">About</a></li>
-                <li><a href="#testimonials" className="text-gray-400 hover:text-red-500 transition">Testimonials</a></li>
-                <li><a href="#contact" className="text-gray-400 hover:text-red-500 transition">Contact</a></li>
+                <li><a href="#services" className="text-gray-600 hover:text-[#03afdc] transition">Services</a></li>
+                <li><a href="#work" className="text-gray-600 hover:text-[#03afdc] transition">Our Work</a></li>
+                <li><a href="#about" className="text-gray-600 hover:text-[#03afdc] transition">About</a></li>
+                <li><a href="#testimonials" className="text-gray-600 hover:text-[#03afdc] transition">Testimonials</a></li>
+                <li><a href="#contact" className="text-gray-600 hover:text-[#03afdc] transition">Contact</a></li>
               </ul>
             </div>
             <div>
-              <h4 className="text-lg font-bold mb-4">Services</h4>
+              <h4 className="text-lg font-bold text-gray-900 mb-4">Services</h4>
               <ul className="space-y-2">
-                <li><a href="/services/lead-generation" className="text-gray-400 hover:text-red-500 transition">Lead Generation</a></li>
-                <li><a href="/services/website-design" className="text-gray-400 hover:text-red-500 transition">Website Design</a></li>
-                <li><a href="/services/ai-automation" className="text-gray-400 hover:text-red-500 transition">AI Automation</a></li>
-                <li><a href="/services/seo-optimization" className="text-gray-400 hover:text-red-500 transition">SEO Optimization</a></li>
+                <li><a href="/services/lead-generation" className="text-gray-600 hover:text-[#03afdc] transition">Lead Generation</a></li>
+                <li><a href="/services/website-design" className="text-gray-600 hover:text-[#03afdc] transition">Website Design</a></li>
+                <li><a href="/services/ai-automation" className="text-gray-600 hover:text-[#03afdc] transition">AI Automation</a></li>
+                <li><a href="/services/seo-optimization" className="text-gray-600 hover:text-[#03afdc] transition">SEO Optimization</a></li>
               </ul>
             </div>
           </div>
-          <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400">© 2025 Litzor. All rights reserved.</p>
+          <div className="border-t border-gray-200 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+            <p className="text-gray-600">© 2025 Litzor. All rights reserved.</p>
             <div className="mt-4 md:mt-0">
               <ul className="flex space-x-6">
-                <li><a href="/privacy" className="text-gray-400 hover:text-red-500 transition">Privacy Policy</a></li>
-                <li><a href="/terms" className="text-gray-400 hover:text-red-500 transition">Terms of Service</a></li>
-                <li><a href="/cookies" className="text-gray-400 hover:text-red-500 transition">Cookie Policy</a></li>
+                <li><a href="/privacy" className="text-gray-600 hover:text-[#03afdc] transition">Privacy Policy</a></li>
+                <li><a href="/terms" className="text-gray-600 hover:text-[#03afdc] transition">Terms of Service</a></li>
+                <li><a href="/cookies" className="text-gray-600 hover:text-[#03afdc] transition">Cookie Policy</a></li>
               </ul>
             </div>
           </div>

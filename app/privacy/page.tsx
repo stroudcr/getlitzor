@@ -173,7 +173,7 @@ export default function PrivacyPolicy() {
             <div className="mt-12 pt-8 border-t border-gray-200">
               <Link 
                 href="/" 
-                className="inline-flex items-center text-red-500 hover:text-red-600 font-medium"
+                className="inline-flex items-center text-[#03afdc] hover:text-[#0298c1] font-medium"
               >
                 ← Back to Home
               </Link>

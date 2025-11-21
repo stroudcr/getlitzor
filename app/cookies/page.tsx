@@ -168,9 +168,9 @@ export default function CookiePolicy() {
                 For third-party cookies, you can often opt out directly through the service provider:
               </p>
               <ul className="list-disc pl-6 text-gray-700 mb-4">
-                <li><a href="https://tools.google.com/dlpage/gaoptout" className="text-red-500 hover:text-red-600">Google Analytics Opt-out</a></li>
-                <li><a href="https://www.facebook.com/help/568137493302217" className="text-red-500 hover:text-red-600">Facebook Cookie Settings</a></li>
-                <li><a href="https://www.google.com/settings/ads" className="text-red-500 hover:text-red-600">Google Ads Settings</a></li>
+                <li><a href="https://tools.google.com/dlpage/gaoptout" className="text-[#03afdc] hover:text-[#0298c1]">Google Analytics Opt-out</a></li>
+                <li><a href="https://www.facebook.com/help/568137493302217" className="text-[#03afdc] hover:text-[#0298c1]">Facebook Cookie Settings</a></li>
+                <li><a href="https://www.google.com/settings/ads" className="text-[#03afdc] hover:text-[#0298c1]">Google Ads Settings</a></li>
               </ul>
             </section>
 
@@ -227,19 +227,19 @@ export default function CookiePolicy() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link 
                   href="/" 
-                  className="inline-flex items-center text-red-500 hover:text-red-600 font-medium"
+                  className="inline-flex items-center text-[#03afdc] hover:text-[#0298c1] font-medium"
                 >
                   ← Back to Home
                 </Link>
                 <Link 
                   href="/privacy" 
-                  className="inline-flex items-center text-red-500 hover:text-red-600 font-medium"
+                  className="inline-flex items-center text-[#03afdc] hover:text-[#0298c1] font-medium"
                 >
                   View Privacy Policy
                 </Link>
                 <Link 
                   href="/terms" 
-                  className="inline-flex items-center text-red-500 hover:text-red-600 font-medium"
+                  className="inline-flex items-center text-[#03afdc] hover:text-[#0298c1] font-medium"
                 >
                   View Terms of Service
                 </Link>

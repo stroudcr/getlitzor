@@ -28,12 +28,12 @@ export default function Navbar() {
           <div className="flex items-center">
             <Link href="/" className="flex items-center group">
               <div className="relative">
-                <Image 
-                  src="/logo.png" 
-                  alt="Litzor Logo" 
-                  width={48} 
-                  height={48} 
-                  className="w-10 h-10 lg:w-12 lg:h-12 transition-transform duration-200 group-hover:scale-105"
+                <Image
+                  src="/logo.svg"
+                  alt="Litzor Logo"
+                  width={192}
+                  height={192}
+                  className="w-40 h-40 lg:w-48 lg:h-48 transition-transform duration-200 group-hover:scale-105"
                 />
               </div>
             </Link>
@@ -51,10 +51,10 @@ export default function Navbar() {
               <a
                 key={item.name}
                 href={item.href}
-                className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-500 hover:bg-red-50 rounded-lg transition-all duration-200 relative group"
+                className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-[#03afdc] hover:bg-blue-50 rounded-lg transition-all duration-200 relative group"
               >
                 {item.name}
-                <span className="absolute inset-x-0 -bottom-px h-px bg-gradient-to-r from-transparent via-red-500 to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-200"></span>
+                <span className="absolute inset-x-0 -bottom-px h-px bg-gradient-to-r from-transparent via-[#03afdc] to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-200"></span>
               </a>
             ))}
           </nav>
@@ -63,7 +63,10 @@ export default function Navbar() {
           <div className="hidden lg:flex items-center">
             <a
               href="/#contact"
-              className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-red-500 hover:bg-red-600 rounded-lg transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5"
+              className="inline-flex items-center px-4 py-2 text-sm font-medium text-white rounded-lg transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5"
+              style={{ backgroundColor: '#03afdc' }}
+              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#0298c1'}
+              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#03afdc'}
             >
               Get Started
               <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -77,7 +80,7 @@ export default function Navbar() {
             <button
               type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-lg text-gray-700 hover:text-red-500 hover:bg-red-50 transition-colors duration-200"
+              className="inline-flex items-center justify-center p-2 rounded-lg text-gray-700 hover:text-[#03afdc] hover:bg-blue-50 transition-colors duration-200"
               aria-controls="mobile-menu"
               aria-expanded={mobileMenuOpen}
             >
@@ -114,7 +117,7 @@ export default function Navbar() {
                 key={item.name}
                 href={item.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="block px-3 py-3 text-base font-medium text-gray-700 hover:text-red-500 hover:bg-red-50 rounded-xl transition-all duration-200 animate-slide-up"
+                className="block px-3 py-3 text-base font-medium text-gray-700 hover:text-[#03afdc] hover:bg-blue-50 rounded-xl transition-all duration-200 animate-slide-up"
                 style={{ animationDelay: `${index * 50}ms` }}
               >
                 {item.name}
@@ -124,7 +127,7 @@ export default function Navbar() {
               <a
                 href="/#contact"
                 onClick={() => setMobileMenuOpen(false)}
-                className="block w-full text-center px-4 py-3 text-sm font-medium text-white bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 hover:to-orange-600 rounded-xl transition-all duration-200 shadow-lg"
+                className="block w-full text-center px-4 py-3 text-sm font-medium text-white bg-gradient-to-r from-[#03afdc] to-[#0f3e66] hover:from-[#0298c1] hover:to-[#0a2f4d] rounded-xl transition-all duration-200 shadow-lg"
               >
                 Get Started
               </a>

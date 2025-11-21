@@ -117,7 +117,7 @@ const LeadGenerationPage: FC = () => {
         <meta name="keywords" content="lead generation, lead capture, sales funnel, landing page design, lead qualification, lead scoring, local business leads, B2B lead generation, conversion optimization" />
         <link rel="canonical" href="https://www.getlitzor.com/services/lead-generation" />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/logo.png" />
+        <link rel="apple-touch-icon" href="/logo.svg" />
 
         <title>Lead Generation Services for Local Businesses | Litzor</title>
         <meta name="description" content="Attract and capture qualified leads with proven funnels and landing pages that convert. Litzor's lead generation services help local businesses grow with consistent, high-quality leads." />
@@ -148,7 +148,7 @@ const LeadGenerationPage: FC = () => {
                 "@type": "LocalBusiness",
                 "name": "Litzor",
                 "url": "https://www.getlitzor.com",
-                "logo": "https://www.getlitzor.com/logo.png"
+                "logo": "https://www.getlitzor.com/logo.svg"
               },
               "description": "Attract and capture qualified leads with proven funnels and landing pages that convert. Professional lead generation services for local businesses.",
               "areaServed": {
@@ -278,11 +278,11 @@ const LeadGenerationPage: FC = () => {
         {/* Hero Section */}
         <section className="relative py-24 md:py-32 overflow-hidden">
           {/* Background */}
-          <div className="absolute inset-0 bg-gradient-to-br from-red-50 via-orange-50 to-pink-50"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-sky-50 to-cyan-50"></div>
 
           {/* Decorative shapes */}
-          <div className="absolute top-20 right-10 w-72 h-72 bg-gradient-to-br from-red-400/20 to-orange-400/20 rounded-full blur-3xl animate-float"></div>
-          <div className="absolute -bottom-20 -left-20 w-96 h-96 bg-gradient-to-tr from-pink-400/20 to-red-400/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
+          <div className="absolute top-20 right-10 w-72 h-72 bg-gradient-to-br from-[#03afdc]/20 to-[#0f3e66]/20 rounded-full blur-3xl animate-float"></div>
+          <div className="absolute -bottom-20 -left-20 w-96 h-96 bg-gradient-to-tr from-cyan-400/20 to-[#03afdc]/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
 
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl">
@@ -313,7 +313,7 @@ const LeadGenerationPage: FC = () => {
               >
                 <Link
                   href="/#contact"
-                  className="group relative px-10 py-5 bg-gradient-to-r from-red-500 via-orange-500 to-red-500 text-white font-semibold rounded-xl hover:shadow-2xl transition-all duration-300 overflow-hidden animate-gradient hover:scale-105 text-center"
+                  className="group relative px-10 py-5 bg-gradient-to-r from-[#03afdc] via-[#0f3e66] to-[#03afdc] text-white font-semibold rounded-xl hover:shadow-2xl transition-all duration-300 overflow-hidden animate-gradient hover:scale-105 text-center"
                 >
                   <span className="relative z-10 flex items-center justify-center">
                     Get Started
@@ -325,7 +325,7 @@ const LeadGenerationPage: FC = () => {
 
                 <a
                   href="#features"
-                  className="group px-10 py-5 bg-white/80 backdrop-blur-sm text-gray-900 font-semibold rounded-xl border-2 border-gray-200 hover:border-red-300 hover:bg-white transition-all duration-300 hover:shadow-xl hover:scale-105 text-center"
+                  className="group px-10 py-5 bg-white/80 backdrop-blur-sm text-gray-900 font-semibold rounded-xl border-2 border-gray-200 hover:border-[#03afdc]/50 hover:bg-white transition-all duration-300 hover:shadow-xl hover:scale-105 text-center"
                 >
                   <span className="flex items-center justify-center">
                     Learn More
@@ -341,8 +341,8 @@ const LeadGenerationPage: FC = () => {
 
         {/* Features Section */}
         <section id="features" className="py-24 bg-gradient-to-b from-white via-gray-50 to-white relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-96 h-96 bg-red-100/30 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 left-0 w-96 h-96 bg-orange-100/30 rounded-full blur-3xl"></div>
+          <div className="absolute top-0 right-0 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 left-0 w-96 h-96 bg-cyan-100/30 rounded-full blur-3xl"></div>
 
           <div className="container mx-auto px-4 relative z-10">
             <motion.div
@@ -371,14 +371,14 @@ const LeadGenerationPage: FC = () => {
                   whileHover={{ y: -8 }}
                   className="group relative"
                 >
-                  <div className="absolute -inset-0.5 bg-gradient-to-r from-red-500 via-orange-500 to-pink-500 rounded-2xl opacity-0 group-hover:opacity-100 blur transition-all duration-500"></div>
+                  <div className="absolute -inset-0.5 bg-gradient-to-r from-[#03afdc] via-[#0f3e66] to-[#03afdc] rounded-2xl opacity-0 group-hover:opacity-100 blur transition-all duration-500"></div>
 
                   <div className="relative glass-card p-8 rounded-2xl h-full hover:shadow-2xl transition-all duration-500">
-                    <div className="w-16 h-16 mb-6 rounded-xl bg-gradient-to-br from-red-500 to-orange-500 flex items-center justify-center text-3xl transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 shadow-lg">
+                    <div className="w-16 h-16 mb-6 rounded-xl bg-gradient-to-br from-[#03afdc] to-[#0f3e66] flex items-center justify-center text-3xl transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 shadow-lg">
                       {feature.icon}
                     </div>
 
-                    <h3 className="text-2xl font-bold text-gray-950 mb-4 group-hover:text-red-600 transition-colors duration-300">
+                    <h3 className="text-2xl font-bold text-gray-950 mb-4 group-hover:text-[#03afdc] transition-colors duration-300">
                       {feature.title}
                     </h3>
 
@@ -420,7 +420,7 @@ const LeadGenerationPage: FC = () => {
                   transition={{ duration: 0.5, delay: index * 0.15 }}
                   className="text-center"
                 >
-                  <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-red-500 to-orange-500 flex items-center justify-center text-3xl font-bold text-white shadow-xl">
+                  <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-[#03afdc] to-[#0f3e66] flex items-center justify-center text-3xl font-bold text-white shadow-xl">
                     {step.step}
                   </div>
                   <h3 className="text-2xl font-bold text-gray-950 mb-3">
@@ -466,7 +466,7 @@ const LeadGenerationPage: FC = () => {
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   className="flex gap-4"
                 >
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-br from-red-500 to-orange-500 flex items-center justify-center">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-br from-[#03afdc] to-[#0f3e66] flex items-center justify-center">
                     <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
@@ -527,7 +527,7 @@ const LeadGenerationPage: FC = () => {
 
         {/* CTA Section */}
         <section className="relative py-24 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-red-600 via-red-500 to-orange-500 animate-gradient"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-[#0f3e66] via-[#03afdc] to-[#0f3e66] animate-gradient"></div>
 
           <div className="absolute inset-0 opacity-10" style={{
             backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)',
@@ -535,7 +535,7 @@ const LeadGenerationPage: FC = () => {
           }}></div>
 
           <div className="absolute top-10 right-10 w-64 h-64 bg-white/10 rounded-full blur-3xl animate-float"></div>
-          <div className="absolute bottom-10 left-10 w-96 h-96 bg-orange-400/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
+          <div className="absolute bottom-10 left-10 w-96 h-96 bg-[#03afdc]/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
 
           <div className="container mx-auto px-4 text-center relative z-10">
             <motion.div
@@ -560,7 +560,7 @@ const LeadGenerationPage: FC = () => {
               >
                 <Link
                   href="/#contact"
-                  className="group inline-flex items-center gap-3 px-12 py-6 bg-white text-red-600 font-bold text-lg rounded-2xl hover:bg-cream-50 transition-all duration-300 shadow-2xl hover:shadow-[0_20px_60px_rgba(0,0,0,0.3)] relative overflow-hidden"
+                  className="group inline-flex items-center gap-3 px-12 py-6 bg-white text-[#03afdc] font-bold text-lg rounded-2xl hover:bg-cream-50 transition-all duration-300 shadow-2xl hover:shadow-[0_20px_60px_rgba(0,0,0,0.3)] relative overflow-hidden"
                 >
                   <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></span>
 
@@ -580,7 +580,7 @@ const LeadGenerationPage: FC = () => {
           <div className="container mx-auto px-4">
             <Link
               href="/"
-              className="inline-flex items-center text-red-500 hover:text-red-600 font-medium transition-colors"
+              className="inline-flex items-center text-red-500 hover:text-[#03afdc] font-medium transition-colors"
             >
               <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
@@ -590,6 +590,51 @@ const LeadGenerationPage: FC = () => {
           </div>
         </section>
       </main>
+
+      <footer className="bg-gray-50 border-t-4 border-[#03afdc] text-gray-900 py-12">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-4 gap-8">
+            <div>
+              <div className="flex items-center mb-6">
+                <Image src="/logo.svg" alt="Litzor Logo" width={40} height={40} className="mr-2" />
+                <span className="text-2xl font-bold text-gray-900">Litzor</span>
+              </div>
+              <p className="text-gray-600">
+              Marketing That Brings You More Business.
+              </p>
+            </div>
+            <div>
+              <h4 className="text-lg font-bold text-gray-900 mb-4">Quick Links</h4>
+              <ul className="space-y-2">
+                <li><a href="/#services" className="text-gray-600 hover:text-[#03afdc] transition">Services</a></li>
+                <li><a href="/#work" className="text-gray-600 hover:text-[#03afdc] transition">Our Work</a></li>
+                <li><a href="/#about" className="text-gray-600 hover:text-[#03afdc] transition">About</a></li>
+                <li><a href="/#testimonials" className="text-gray-600 hover:text-[#03afdc] transition">Testimonials</a></li>
+                <li><a href="/#contact" className="text-gray-600 hover:text-[#03afdc] transition">Contact</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-lg font-bold text-gray-900 mb-4">Services</h4>
+              <ul className="space-y-2">
+                <li><a href="/services/lead-generation" className="text-gray-600 hover:text-[#03afdc] transition">Lead Generation</a></li>
+                <li><a href="/services/website-design" className="text-gray-600 hover:text-[#03afdc] transition">Website Design</a></li>
+                <li><a href="/services/ai-automation" className="text-gray-600 hover:text-[#03afdc] transition">AI Automation</a></li>
+                <li><a href="/services/seo-optimization" className="text-gray-600 hover:text-[#03afdc] transition">SEO Optimization</a></li>
+              </ul>
+            </div>
+          </div>
+          <div className="border-t border-gray-200 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+            <p className="text-gray-600">© 2025 Litzor. All rights reserved.</p>
+            <div className="mt-4 md:mt-0">
+              <ul className="flex space-x-6">
+                <li><a href="/privacy" className="text-gray-600 hover:text-[#03afdc] transition">Privacy Policy</a></li>
+                <li><a href="/terms" className="text-gray-600 hover:text-[#03afdc] transition">Terms of Service</a></li>
+                <li><a href="/cookies" className="text-gray-600 hover:text-[#03afdc] transition">Cookie Policy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }

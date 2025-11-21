@@ -4,9 +4,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --gradient-start: #ef4444;
-  --gradient-mid: #f97316;
-  --gradient-end: #ec4899;
+  --gradient-start: #03afdc;
+  --gradient-mid: #0f3e66;
+  --gradient-end: #03afdc;
 }
 
 @theme inline {
@@ -14,13 +14,6 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
@@ -67,10 +60,10 @@ html {
 
 @keyframes glow-pulse {
   0%, 100% {
-    box-shadow: 0 0 20px rgba(239, 68, 68, 0.4), 0 0 40px rgba(239, 68, 68, 0.2);
+    box-shadow: 0 0 20px rgba(3, 175, 220, 0.4), 0 0 40px rgba(3, 175, 220, 0.2);
   }
   50% {
-    box-shadow: 0 0 40px rgba(239, 68, 68, 0.6), 0 0 80px rgba(239, 68, 68, 0.3);
+    box-shadow: 0 0 40px rgba(3, 175, 220, 0.6), 0 0 80px rgba(3, 175, 220, 0.3);
   }
 }
 
@@ -167,7 +160,7 @@ html {
 
 /* Gradient text */
 .gradient-text {
-  background: linear-gradient(135deg, #ef4444, #f97316, #ec4899);
+  background: linear-gradient(135deg, #03afdc, #0f3e66, #03afdc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -185,7 +178,7 @@ html {
   inset: -2px;
   border-radius: inherit;
   padding: 2px;
-  background: linear-gradient(135deg, #ef4444, #f97316, #ec4899);
+  background: linear-gradient(135deg, #03afdc, #0f3e66, #03afdc);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
@@ -232,10 +225,10 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, #ef4444, #f97316);
+  background: linear-gradient(135deg, #03afdc, #0f3e66);
   border-radius: 6px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg, #dc2626, #ea580c);
+  background: linear-gradient(135deg, #0298c1, #0a2f4d);
 }
