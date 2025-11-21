@@ -2,6 +2,7 @@
 
 import Head from 'next/head';
 import Link from 'next/link';
+import Image from 'next/image';
 import { FC } from 'react';
 import Navbar from '../../components/Navbar';
 import { motion } from 'framer-motion';
