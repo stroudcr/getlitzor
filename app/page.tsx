@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import '../styles/globals.css'
-import { FC } from 'react';
+import { FC, useState, FormEvent } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import { motion } from 'framer-motion';
@@ -29,6 +29,35 @@ interface PortfolioProps {
 }
 
 const Home: FC = () => {
+  const [formStatus, setFormStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setFormStatus('submitting');
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch('https://formspree.io/f/mrbnlkdk', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        setFormStatus('success');
+        form.reset();
+      } else {
+        setFormStatus('error');
+      }
+    } catch {
+      setFormStatus('error');
+    }
+  };
+
   const services: ServiceProps[] = [
     {
       title: "Lead Generation",
@@ -792,12 +821,14 @@ const Home: FC = () => {
                 <div className="grid lg:grid-cols-2">
                   {/* Form Side */}
                   <div className="p-8 md:p-12 lg:p-16">
-                    <form className="space-y-6">
+                    <form onSubmit={handleSubmit} className="space-y-6">
                       {/* Name Field */}
                       <div className="relative">
                         <input
                           type="text"
                           id="name"
+                          name="name"
+                          required
                           className="peer w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-[#03afdc] transition-all duration-300 placeholder-transparent"
                           placeholder="Full Name"
                         />
@@ -814,6 +845,8 @@ const Home: FC = () => {
                         <input
                           type="email"
                           id="email"
+                          name="email"
+                          required
                           className="peer w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-[#03afdc] transition-all duration-300 placeholder-transparent"
                           placeholder="Email Address"
                         />
@@ -829,7 +862,9 @@ const Home: FC = () => {
                       <div className="relative">
                         <textarea
                           id="message"
+                          name="message"
                           rows={5}
+                          required
                           className="peer w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-[#03afdc] transition-all duration-300 placeholder-transparent resize-none"
                           placeholder="Message"
                         ></textarea>
@@ -844,18 +879,43 @@ const Home: FC = () => {
                       {/* Submit Button */}
                       <motion.button
                         type="submit"
-                        whileHover={{ scale: 1.02 }}
-                        whileTap={{ scale: 0.98 }}
-                        className="group w-full px-8 py-5 bg-gradient-to-r from-[#03afdc] to-[#0f3e66] text-white font-bold text-lg rounded-xl hover:shadow-2xl transition-all duration-300 relative overflow-hidden"
+                        disabled={formStatus === 'submitting'}
+                        whileHover={formStatus !== 'submitting' ? { scale: 1.02 } : {}}
+                        whileTap={formStatus !== 'submitting' ? { scale: 0.98 } : {}}
+                        className={`group w-full px-8 py-5 bg-gradient-to-r from-[#03afdc] to-[#0f3e66] text-white font-bold text-lg rounded-xl hover:shadow-2xl transition-all duration-300 relative overflow-hidden ${formStatus === 'submitting' ? 'opacity-70 cursor-not-allowed' : ''}`}
                       >
                         <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></span>
                         <span className="relative z-10 flex items-center justify-center gap-2">
-                          Send Message
-                          <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                          </svg>
+                          {formStatus === 'submitting' ? 'Sending...' : 'Send Message'}
+                          {formStatus !== 'submitting' && (
+                            <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                          )}
                         </span>
                       </motion.button>
+
+                      {/* Success Message */}
+                      {formStatus === 'success' && (
+                        <motion.div
+                          initial={{ opacity: 0, y: -10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          className="p-4 bg-green-50 border border-green-200 rounded-xl text-green-700 text-center"
+                        >
+                          Thank you! Your message has been sent successfully.
+                        </motion.div>
+                      )}
+
+                      {/* Error Message */}
+                      {formStatus === 'error' && (
+                        <motion.div
+                          initial={{ opacity: 0, y: -10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          className="p-4 bg-red-50 border border-red-200 rounded-xl text-red-700 text-center"
+                        >
+                          Oops! Something went wrong. Please try again.
+                        </motion.div>
+                      )}
                     </form>
                   </div>
 
@@ -905,7 +965,7 @@ const Home: FC = () => {
                           </div>
                           <div>
                             <p className="text-gray-600 text-sm font-semibold mb-1">Response Time</p>
-                            <p className="text-gray-800 text-lg">Within 24 hours</p>
+                            <p className="text-gray-800 text-lg">Within 48 hours</p>
                           </div>
                         </motion.div>
                       </div>
