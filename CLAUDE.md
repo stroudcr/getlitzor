@@ -133,7 +133,7 @@ Uses Next.js Image component with:
 ### Brand Identity
 - Company: Litzor
 - Domain: getlitzor.com
-- Tagline: "Marketing That Brings You More Business"
+- Tagline: "Technology That Brings You More Business"
 - Focus: AI-powered marketing for local service businesses
 - Brand colors: Cyan Blue (#03afdc) and Navy Blue (#0f3e66), with Cream (#fefcf8 / cream-50) backgrounds
 

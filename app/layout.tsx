@@ -15,16 +15,16 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Litzor | Marketing That Brings You More Business",
+    default: "Litzor | Technology That Brings You More Business",
     template: "%s | Litzor",
   },
   description:
-    "We help local service businesses get more customers with simple, smart, AI-powered marketing. Get started with a free call today.",
+    "We help local service businesses get more customers with simple, smart, AI-powered technology. Get started with a free call today.",
   metadataBase: new URL("https://www.getlitzor.com"),
   openGraph: {
-    title: "Litzor | Marketing That Brings You More Business",
+    title: "Litzor | technology That Brings You More Business",
     description:
-      "Local service businesses trust us for simple, smart marketing that brings real results. Book your free consultation.",
+      "Local service businesses trust us for simple, smart technology that brings real results. Book your free consultation.",
     url: "https://www.getlitzor.com",
     siteName: "Litzor",
     images: [
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Litzor | Marketing That Brings You More Business",
+    title: "Litzor | Technology That Brings You More Business",
     description:
-      "Local service businesses trust us for simple, smart marketing that gets results.",
+      "Local service businesses trust us for simple, smart technology that gets results.",
     images: ["/og-image.jpg"],
   },
 };

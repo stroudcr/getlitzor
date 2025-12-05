@@ -12,7 +12,7 @@ export default function Footer() {
               <Image src="/logo.svg" alt="Litzor Logo" width={160} height={160} className="mr-2" />
             </div>
             <p className="text-gray-600">
-            Marketing That Brings You More Business.
+            Technology That Brings You More Business.
             </p>
           </div>
           <div>

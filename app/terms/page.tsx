@@ -39,16 +39,14 @@ export default function TermsOfService() {
             <section className="mb-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">2. Description of Services</h2>
               <p className="text-gray-700 mb-4">
-                Litzor provides marketing services including but not limited to:
+                Litzor provides technology services including but not limited to:
               </p>
               <ul className="list-disc pl-6 text-gray-700 mb-4">
-                <li>AI-powered marketing strategies and campaigns</li>
-                <li>Content creation and management</li>
-                <li>Social media management and optimization</li>
+                <li>AI-powered technology strategies and campaigns</li>
                 <li>Search engine optimization (SEO) services</li>
                 <li>Analytics and reporting</li>
                 <li>Conversion optimization</li>
-                <li>Digital marketing consulting</li>
+                <li>Digital technology consulting</li>
               </ul>
               <p className="text-gray-700">
                 We reserve the right to modify, suspend, or discontinue any aspect of our services at any time.
@@ -132,7 +130,7 @@ export default function TermsOfService() {
               </p>
               <ul className="list-disc pl-6 text-gray-700 mb-4">
                 <li>Uninterrupted or error-free service</li>
-                <li>Specific results from marketing campaigns</li>
+                <li>Specific results from our technology</li>
                 <li>Compatibility with all devices or browsers</li>
                 <li>Availability during maintenance periods</li>
               </ul>

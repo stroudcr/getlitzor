@@ -93,7 +93,7 @@ const Home: FC = () => {
 
   const testimonials: TestimonialProps[] = [
     {
-      quote: "Working with a modern, technology driven marketing team like this is exactly what small businesses need. It's fast, effective, and refreshingly simple.",
+      quote: "Working with a modern, technology driven team like this is exactly what small businesses need. It's fast, effective, and refreshingly simple.",
       author: "Alex R.",
       company: "Business Owner"
     },
@@ -103,7 +103,7 @@ const Home: FC = () => {
       company: "Startup Founder"
     },
     {
-      quote: "This is the kind of marketing every modern business owner needs—smart, lean, and actually understandable.",
+      quote: "This is the kind of technology every modern business owner needs—smart, lean, and actually understandable.",
       author: "Riley N",
       company: "Operations Manager"
     }
@@ -116,7 +116,7 @@ const Home: FC = () => {
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow" />
         <meta name="author" content="Litzor" />
-        <meta name="keywords" content="AI marketing, digital marketing, local business marketing, SEO, social media marketing, website design, web development, conversion optimization, marketing automation" />
+        <meta name="keywords" content="AI technology, digital technology, local business technology, SEO, social media technology, website design, web development, conversion optimization, business automation" />
         <link rel="canonical" href="https://www.getlitzor.com" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/logo.svg" />
@@ -128,7 +128,7 @@ const Home: FC = () => {
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               "name": "Litzor",
-              "description": "AI-powered marketing services for local businesses",
+              "description": "AI-powered technology services for local businesses",
               "url": "https://www.getlitzor.com",
               "logo": "https://www.getlitzor.com/logo.svg",
               "image": "https://www.getlitzor.com/og-image.jpg",
@@ -158,13 +158,13 @@ const Home: FC = () => {
               },
               "hasOfferCatalog": {
                 "@type": "OfferCatalog",
-                "name": "Marketing Services",
+                "name": "Technology Services",
                 "itemListElement": [
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "AI-Powered Marketing",
+                      "name": "AI-Powered Technology",
                       "description": "Leverage AI technologies to optimize campaigns and target the right audience"
                     }
                   },
@@ -884,8 +884,8 @@ const Home: FC = () => {
                           </div>
                           <div>
                             <p className="text-gray-600 text-sm font-semibold mb-1">Email</p>
-                            <a href="mailto:info@getlitzor.com" className="text-gray-800 text-lg hover:text-[#03afdc] transition-colors">
-                              info@getlitzor.com
+                            <a href="mailto:litzor@welldiem.com" className="text-gray-800 text-lg hover:text-[#03afdc] transition-colors">
+                              litzor@welldiem.com
                             </a>
                           </div>
                         </motion.div>
