@@ -296,7 +296,7 @@ const Home: FC = () => {
         transition={{ duration: 0.8 }}
       >
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-gray-950 mb-8 leading-tight drop-shadow-sm">
-          Marketing That Brings You More Business.<span className="gradient-text"> Litzor</span>
+          Turn Technology Into Growth.<span className="gradient-text"> Litzor</span>
         </h1>
       </motion.div>
 
@@ -306,7 +306,7 @@ const Home: FC = () => {
         transition={{ duration: 0.8, delay: 0.2 }}
         className="text-xl md:text-2xl text-gray-800 mb-12 max-w-3xl leading-relaxed drop-shadow-sm"
       >
-        We create simple, smart marketing that brings in customers—so you can focus on running your business. No stress. No buzzwords. Just results.
+        We create intelligent web and AI tools that drive revenue, allowing you to focus on running your company.
       </motion.p>
 
       <motion.div
